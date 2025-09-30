@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxx41bcyxworf"]
+
+[ext_resource type="Script" uid="uid://cdeiqbtpt5ip7" path="res://NPC/npc.gd" id="1_3etx6"]
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_056qb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_056qb"]
+size = Vector2(290.5, 72)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_056qb"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="npc" type="Area2D" node_paths=PackedStringArray("multiple_labels")]
+script = ExtResource("1_3etx6")
+dialogue = Array[String](["p: Hello World", "This is a test dialogue", "p: Looking good so far", "p: what do you have for me?"])
+multiple_labels = [NodePath("Label")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_056qb")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5.25, 5.25)
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.5
+offset_top = -93.0
+offset_right = 10.5
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_056qb")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_056qb")
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
