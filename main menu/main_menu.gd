@@ -16,7 +16,7 @@ var title = "LIM WEI JEN"
 var is_ready = false
 
 func _ready():
-	if OS.has_feature("android") or OS.has_feature("ios"):
+	if OS.has_feature("web_android") or OS.has_feature("web_ios"):
 		$CanvasLayer/AnimationPlayer.stop()
 		return
 	$"CanvasLayer/Mobile Notice".queue_free()
