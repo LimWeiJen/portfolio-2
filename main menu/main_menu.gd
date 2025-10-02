@@ -16,6 +16,11 @@ var title = "LIM WEI JEN"
 var is_ready = false
 
 func _ready():
+	if OS.has_feature("android") or OS.has_feature("ios"):
+		$CanvasLayer/AnimationPlayer.stop()
+		return
+	$"CanvasLayer/Mobile Notice".queue_free()
+
 	await get_tree().create_timer(0.5).timeout
 	var text = ""
 	for c in title:
@@ -45,3 +50,7 @@ func _on_ready_button_pressed():
 	$CanvasLayer/AnimationPlayer.play_backwards("new_animation")
 	await $CanvasLayer/AnimationPlayer.animation_finished
 	get_tree().change_scene_to_file("res://chapters/chapter 1/chapter_1.tscn")
+
+
+func _on_text_version_button_pressed():
+	OS.shell_open("https://limweijen-text.vercel.app/")

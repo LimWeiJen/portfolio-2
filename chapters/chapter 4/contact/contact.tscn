@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bvrcgyym7ot4y"]
+[gd_scene load_steps=12 format=3 uid="uid://bvrcgyym7ot4y"]
 
 [ext_resource type="Texture2D" uid="uid://dkp4bjwtluev6" path="res://chapters/chapter 4/contact/contact board.png" id="1_pf6xr"]
 [ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_y46an"]
@@ -7,33 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c8b65bqfkremw" path="res://chapters/chapter 3/images/fiverr.webp" id="5_aai3d"]
 [ext_resource type="Texture2D" uid="uid://cod7s4bu34r64" path="res://chapters/chapter 4/contact/instagram.png" id="6_2bgxu"]
 [ext_resource type="Texture2D" uid="uid://cf0c8qlctbwpe" path="res://chapters/chapter 4/contact/GitHub_Invertocat_Logo.svg.png" id="7_jresk"]
-
-[sub_resource type="Animation" id="Animation_jresk"]
-resource_name = "show contact"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:modulate")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Control:scale")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0.2, 0.2), Vector2(1, 1), Vector2(1, 1)]
-}
+[ext_resource type="Texture2D" uid="uid://cqbgphum34eij" path="res://chapters/chapter 4/contact/LinkedIn_logo_initials.png" id="8_8tk17"]
 
 [sub_resource type="Animation" id="Animation_8tk17"]
 length = 0.001
@@ -60,6 +34,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0.2, 0.2)]
+}
+
+[sub_resource type="Animation" id="Animation_jresk"]
+resource_name = "show contact"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(1, 1), Vector2(1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8tk17"]
@@ -165,9 +166,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -275.0
+offset_left = -338.0
 offset_top = 100.0
-offset_right = 275.0
+offset_right = 338.0
 offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -187,8 +188,8 @@ link = "mailto:limweijen96@gmail.com"
 [node name="Button2" type="Button" parent="Control/HBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 150.0
-offset_right = 250.0
+offset_left = 144.0
+offset_right = 244.0
 offset_bottom = 100.0
 pivot_offset = Vector2(52, 50)
 icon = ExtResource("5_aai3d")
@@ -200,8 +201,8 @@ link = "https://www.fiverr.com/limweijen?public_mode=true"
 [node name="Button3" type="Button" parent="Control/HBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 300.0
-offset_right = 400.0
+offset_left = 288.0
+offset_right = 388.0
 offset_bottom = 100.0
 pivot_offset = Vector2(50, 50)
 icon = ExtResource("6_2bgxu")
@@ -213,8 +214,8 @@ link = "https://www.instagram.com/limweijen96/"
 [node name="Button4" type="Button" parent="Control/HBoxContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_left = 450.0
-offset_right = 550.0
+offset_left = 432.0
+offset_right = 532.0
 offset_bottom = 100.0
 pivot_offset = Vector2(49, 52)
 icon = ExtResource("7_jresk")
@@ -222,6 +223,19 @@ flat = true
 expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://github.com/LimWeiJen"
+
+[node name="Button5" type="Button" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 576.0
+offset_right = 676.0
+offset_bottom = 100.0
+pivot_offset = Vector2(51, 57)
+icon = ExtResource("8_8tk17")
+flat = true
+expand_icon = true
+script = ExtResource("4_rwom5")
+link = "https://www.linkedin.com/in/lim-wei-jen-13524a200/"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -232,3 +246,4 @@ libraries = {
 [connection signal="pressed" from="Control/HBoxContainer/Button2" to="Control/HBoxContainer/Button2" method="_on_pressed"]
 [connection signal="pressed" from="Control/HBoxContainer/Button3" to="Control/HBoxContainer/Button3" method="_on_pressed"]
 [connection signal="pressed" from="Control/HBoxContainer/Button4" to="Control/HBoxContainer/Button4" method="_on_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/Button5" to="Control/HBoxContainer/Button5" method="_on_pressed"]
