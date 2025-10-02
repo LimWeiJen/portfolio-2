@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://07rjykb0rqjf"
+path="res://.godot/imported/stone fall.mp3-2c3f816e4c5f21b9777805222120d294.mp3str"
+
+[deps]
+
+source_file="res://player/sound effects/stone fall.mp3"
+dest_files=["res://.godot/imported/stone fall.mp3-2c3f816e4c5f21b9777805222120d294.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

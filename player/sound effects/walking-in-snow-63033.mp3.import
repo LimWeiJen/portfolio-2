@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2fqke1kafwar"
+path="res://.godot/imported/walking-in-snow-63033.mp3-65afaf1ec95dc0cf19e0339b83c61ccd.mp3str"
+
+[deps]
+
+source_file="res://player/sound effects/walking-in-snow-63033.mp3"
+dest_files=["res://.godot/imported/walking-in-snow-63033.mp3-65afaf1ec95dc0cf19e0339b83c61ccd.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

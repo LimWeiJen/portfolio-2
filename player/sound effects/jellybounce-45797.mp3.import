@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ce3m3epufyg8x"
+path="res://.godot/imported/jellybounce-45797.mp3-2aa3033976121dcf65bd9790dd5cf68c.mp3str"
+
+[deps]
+
+source_file="res://player/sound effects/jellybounce-45797.mp3"
+dest_files=["res://.godot/imported/jellybounce-45797.mp3-2aa3033976121dcf65bd9790dd5cf68c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxj8wtlj65bnj"
+path="res://.godot/imported/walk-on-dirt-1-291981.mp3-64dd8333d0bba43abbf84ba95c8c2ee4.mp3str"
+
+[deps]
+
+source_file="res://player/sound effects/walk-on-dirt-1-291981.mp3"
+dest_files=["res://.godot/imported/walk-on-dirt-1-291981.mp3-64dd8333d0bba43abbf84ba95c8c2ee4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

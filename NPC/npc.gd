@@ -3,6 +3,7 @@ extends Area2D
 @export_multiline var dialogue: Array[String]
 @export var multiple_labels: Array[Label]
 @export var max_text_length = 10
+@export var talking_audio: Array[AudioStream]
 
 @onready var player: Player = get_parent().get_node("player")
 @onready var animated_sprite = $Sprite2D
@@ -26,10 +27,13 @@ func start_dialogue():
 			await player_speak(line.get_slice(":", 1))
 		elif line.begins_with("anim:"):
 			await play_animation(line.get_slice(":", 1))
+		elif line == "contact":
+			await show_contact_info()
 		elif line.contains(":"):
 			await npc_speak(line.get_slice(":", 1), int(line.get_slice(":", 0)))
 		else:
 			await npc_speak(line)
+	$AudioStreamPlayer2D.stop()
 	player.dialogue_label.text = ""
 	hide_all_npc_labels()
 	player.dialogue_label.visible = false
@@ -39,14 +43,20 @@ func play_animation(anim_name: String):
 	if not (animated_sprite.sprite_frames as SpriteFrames).get_animation_loop(anim_name):
 		await animated_sprite.animation_finished
 
+func show_contact_info():
+	get_parent().get_node("contact/AnimationPlayer").play("show contact")
+
 func player_speak(line: String):
 	player.dialogue_label.text = ""
 	hide_all_npc_labels()
 	player.dialogue_label.visible = true
+	$AudioStreamPlayer2D.stream = talking_audio.pick_random()
+	$AudioStreamPlayer2D.play()
 	for c in line:
 		player.dialogue_label.text += c
-		await get_tree().create_timer(0.05).timeout
-	await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(0.03).timeout
+	$AudioStreamPlayer2D.stop()
+	await get_tree().create_timer(1.2).timeout
 
 func npc_speak(line: String, label_no = 0):
 	player.dialogue_label.text = ""
@@ -55,6 +65,8 @@ func npc_speak(line: String, label_no = 0):
 	label.visible = true
 	player.dialogue_label.visible = false
 	var curr_text_length = 0
+	$AudioStreamPlayer2D.stream = talking_audio.pick_random()
+	$AudioStreamPlayer2D.play()
 	for c in line:
 		if c == " ":
 			curr_text_length += 1
@@ -62,8 +74,9 @@ func npc_speak(line: String, label_no = 0):
 		if curr_text_length > max_text_length:
 			label.text += "\n"
 			curr_text_length = 0
-		await get_tree().create_timer(0.05).timeout
-	await get_tree().create_timer(1.0).timeout
+		await get_tree().create_timer(0.03).timeout
+	$AudioStreamPlayer2D.stop()
+	await get_tree().create_timer(1.2).timeout
 	hide_all_npc_labels()
 
 func hide_all_npc_labels():
@@ -77,6 +90,7 @@ func _on_body_entered(body: Node2D):
 		body.show_interact_sign()
 
 func _on_body_exited(body: Node2D):
-	if body is Player and not player_is_interacting:
+	if body is Player:
 		player_is_within_range = false
-		body.hide_interact_sign()
+		if not player_is_interacting:
+			body.hide_interact_sign()

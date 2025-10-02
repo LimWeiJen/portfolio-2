@@ -1,0 +1,1573 @@
+[gd_scene load_steps=47 format=4 uid="uid://cvj0ukncyb5pa"]
+
+[ext_resource type="Texture2D" uid="uid://ipb311v4n477" path="res://chapters/chapter 1/environment sprites/background.png" id="1_2k3ox"]
+[ext_resource type="Script" uid="uid://c0arw83415esb" path="res://chapters/chapter 3/chapter_3.gd" id="1_ssp65"]
+[ext_resource type="Texture2D" uid="uid://bw66tbhphpctr" path="res://chapters/chapter 1/environment sprites/background 4.png" id="2_8coio"]
+[ext_resource type="Texture2D" uid="uid://bfk28a3pf8ply" path="res://chapters/chapter 1/environment sprites/background 3.png" id="3_e1mbj"]
+[ext_resource type="Texture2D" uid="uid://c2eq61hgax2ss" path="res://chapters/chapter 1/environment sprites/background 2.png" id="4_7dkwi"]
+[ext_resource type="Texture2D" uid="uid://dp2g0wix1wrb2" path="res://chapters/chapter 1/environment sprites/background 7.png" id="5_7dkwi"]
+[ext_resource type="PackedScene" uid="uid://fdb8t12ej0n1" path="res://player/player.tscn" id="5_soq7o"]
+[ext_resource type="Texture2D" uid="uid://dnmnkyaqcx2me" path="res://chapters/chapter 1/environment sprites/background 5.png" id="6_soq7o"]
+[ext_resource type="Texture2D" uid="uid://cwa54gjt06k5k" path="res://chapters/chapter 1/environment sprites/background 6.png" id="7_75p25"]
+[ext_resource type="Texture2D" uid="uid://dx3yyy7al0fd1" path="res://chapters/chapter 3/environment sprites/cloud platform.png" id="9_75p25"]
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="9_ixxuq"]
+[ext_resource type="Texture2D" uid="uid://bsqdentqv1l3x" path="res://chapters/chapter 3/images/asean foundation.png" id="9_urair"]
+[ext_resource type="PackedScene" uid="uid://2t7pyvc5xk6n" path="res://chapters/chapter 3/cloud/cloud.tscn" id="10_bdnb5"]
+[ext_resource type="Texture2D" uid="uid://dl4qsp1rnj0md" path="res://chapters/chapter 3/images/chumbaka.png" id="10_d8vyo"]
+[ext_resource type="PackedScene" uid="uid://bkqm7cub82atg" path="res://chapters/chapter 3/sign display/sign_display.tscn" id="12_2i6nm"]
+[ext_resource type="Texture2D" uid="uid://b7adpwi52tn8e" path="res://chapters/chapter 3/images/workshop.jpg" id="12_c053r"]
+[ext_resource type="Texture2D" uid="uid://bfi11c8o722rj" path="res://chapters/chapter 3/sign sprites/star icon.png" id="12_paat6"]
+[ext_resource type="Texture2D" uid="uid://c8b65bqfkremw" path="res://chapters/chapter 3/images/fiverr.webp" id="13_rj52a"]
+[ext_resource type="Texture2D" uid="uid://db183r13v4oy4" path="res://chapters/chapter 3/sign sprites/present.png" id="14_o021v"]
+[ext_resource type="Texture2D" uid="uid://dhdgoaa7wliki" path="res://chapters/chapter 3/sign sprites/ribbon.png" id="15_m28hk"]
+[ext_resource type="Texture2D" uid="uid://bj1ctdu0hrcyt" path="res://chapters/chapter 3/images/expense flow.png" id="16_mkvcy"]
+[ext_resource type="PackedScene" uid="uid://b8v8c208cllm5" path="res://chapters/chapter 3/sign display/external_link_button.tscn" id="17_yl2qr"]
+[ext_resource type="Texture2D" uid="uid://8g0imwrgipyq" path="res://chapters/chapter 3/images/generation 142.png" id="18_m5s67"]
+[ext_resource type="Texture2D" uid="uid://gpy6jatpge1d" path="res://chapters/chapter 3/sign sprites/star.png" id="18_oru4r"]
+[ext_resource type="Texture2D" uid="uid://dmsyjn4cnq7hs" path="res://chapters/chapter 3/sign sprites/stars.png" id="18_xnybo"]
+[ext_resource type="Texture2D" uid="uid://b7nmqexmavnl7" path="res://chapters/chapter 3/images/light.png" id="19_867yj"]
+[ext_resource type="Texture2D" uid="uid://dnrr63t38w42m" path="res://chapters/chapter 3/images/lasagcorner.webp" id="20_yjxt0"]
+[ext_resource type="AudioStream" uid="uid://c2fqke1kafwar" path="res://player/sound effects/walking-in-snow-63033.mp3" id="21_crou4"]
+[ext_resource type="Texture2D" uid="uid://b7dxhmkev6psb" path="res://chapters/chapter 3/images/dalia.webp" id="23_jnpcx"]
+[ext_resource type="Texture2D" uid="uid://qqunwv54e27" path="res://chapters/chapter 3/images/james.png" id="23_klooi"]
+[ext_resource type="Texture2D" uid="uid://c6euqaejlerfl" path="res://chapters/chapter 3/images/player2.jpg" id="23_yj1o2"]
+[ext_resource type="Texture2D" uid="uid://cvomg6as6uyrk" path="res://chapters/chapter 3/images/juniper.png" id="24_klooi"]
+[ext_resource type="Texture2D" uid="uid://bbddy73xkk8f6" path="res://chapters/chapter 3/images/m1thiew.webp" id="24_wvc35"]
+[ext_resource type="Texture2D" uid="uid://cj0xsjyk3wkkk" path="res://chapters/chapter 3/images/e.jpg" id="25_wvcuw"]
+[ext_resource type="Texture2D" uid="uid://btvp3uwoev8sh" path="res://chapters/chapter 1/environment sprites/tilemap.png" id="33_1gt7a"]
+[ext_resource type="PackedScene" uid="uid://cxog5psgyyt40" path="res://next level teleporter/next_level_teleporter.tscn" id="34_5uag5"]
+[ext_resource type="PackedScene" uid="uid://ce88y1pevtcre" path="res://chapters/chapter 4/chapter_4.tscn" id="35_mygd7"]
+[ext_resource type="AudioStream" uid="uid://dcbrpysnr8j5x" path="res://player/sound effects/ambient-nature-with-birds-75766.mp3" id="38_p115l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjxt0"]
+size = Vector2(80, 95)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5uag5"]
+texture = ExtResource("33_1gt7a")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.0776024, 6.991639, -6.0007696, 6.9874196, -6.1033573, 8, 8, 8, 8, -8, -7.020294, -8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.962986, -8, -7.020294, 8, 8, 8, 8, -8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.962986, -8, -7.020294, 8, 8, 8, 8, -8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+3:0/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+2:5/0 = 0
+1:5/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.938896, -8, -6.962986, 1.0315533, -8, 1.0028238, -8, 8, 8, 8, 8, -8)
+
+[sub_resource type="TileSet" id="TileSet_mygd7"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_5uag5")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_75p25"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5uag5"]
+size = Vector2(176, 82)
+
+[sub_resource type="Animation" id="Animation_t7dqo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jddgd"]
+resource_name = "new_animation"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t7dqo"]
+_data = {
+&"RESET": SubResource("Animation_t7dqo"),
+&"new_animation": SubResource("Animation_jddgd")
+}
+
+[node name="chapter 3" type="Node2D"]
+script = ExtResource("1_ssp65")
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+z_index = -2
+repeat_size = Vector2(1280, 960)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(586.3334, 338.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("1_2k3ox")
+
+[node name="Parallax2D4" type="Parallax2D" parent="."]
+z_index = -2
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+position = Vector2(586.3334, 338.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("2_8coio")
+
+[node name="Parallax2D3" type="Parallax2D" parent="."]
+z_index = -2
+scroll_scale = Vector2(0.3, 0.3)
+repeat_size = Vector2(1280, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+position = Vector2(586.3334, 338.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("3_e1mbj")
+
+[node name="Parallax2D2" type="Parallax2D" parent="."]
+z_index = -2
+scroll_scale = Vector2(0.6, 0.6)
+repeat_size = Vector2(1280, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+position = Vector2(586.3334, 338.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("4_7dkwi")
+
+[node name="background graphics" type="Node2D" parent="."]
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics"]
+position = Vector2(-233, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D8" type="Sprite2D" parent="background graphics"]
+position = Vector2(203, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D9" type="Sprite2D" parent="background graphics"]
+position = Vector2(649, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D10" type="Sprite2D" parent="background graphics"]
+position = Vector2(1021, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D11" type="Sprite2D" parent="background graphics"]
+position = Vector2(1457, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D12" type="Sprite2D" parent="background graphics"]
+position = Vector2(1903, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D13" type="Sprite2D" parent="background graphics"]
+position = Vector2(745, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D14" type="Sprite2D" parent="background graphics"]
+position = Vector2(1181, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D15" type="Sprite2D" parent="background graphics"]
+position = Vector2(1627, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D16" type="Sprite2D" parent="background graphics"]
+position = Vector2(1999, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D17" type="Sprite2D" parent="background graphics"]
+position = Vector2(2435, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D18" type="Sprite2D" parent="background graphics"]
+position = Vector2(2881, 353)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D19" type="Sprite2D" parent="background graphics"]
+position = Vector2(2450, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D20" type="Sprite2D" parent="background graphics"]
+position = Vector2(2886, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D21" type="Sprite2D" parent="background graphics"]
+position = Vector2(3332, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D22" type="Sprite2D" parent="background graphics"]
+position = Vector2(3704, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D23" type="Sprite2D" parent="background graphics"]
+position = Vector2(4140, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D24" type="Sprite2D" parent="background graphics"]
+position = Vector2(4586, 642)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D25" type="Sprite2D" parent="background graphics"]
+position = Vector2(-2655, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D26" type="Sprite2D" parent="background graphics"]
+position = Vector2(-2219, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D27" type="Sprite2D" parent="background graphics"]
+position = Vector2(-1773, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D28" type="Sprite2D" parent="background graphics"]
+position = Vector2(-1401, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D29" type="Sprite2D" parent="background graphics"]
+position = Vector2(-965, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D30" type="Sprite2D" parent="background graphics"]
+position = Vector2(-519, 629)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="client review" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(625, -1516)
+
+[node name="CollisionShape2D" parent="client review" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "i highly recommend working with Lim, the game was executed fast and he is responsive with understanding to your needs. the game had multiple revisions and the response was fast, documentation was done on time and well executed. the game was created from scratch, no previous templates, and the communication was done step by step with videos and file about the progress, well done! i will order again from Lim for sure, i really like his work and approach, search no more, trust me"
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- lasagnecorner, Fiverr client"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review/Control/Experience" index="6"]
+offset_left = -265.0
+offset_top = -148.0
+offset_right = -119.0
+offset_bottom = -2.0
+texture = ExtResource("20_yjxt0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review5" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(497, -1516)
+
+[node name="CollisionShape2D" parent="client review5" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review5" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review5/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review5/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review5/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review5/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "Once again a pleasure working with Lim - he's professional, proactive, an expert at what he does and also VERY polite! Thank you again. "
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review5/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- dalia27, Fiverr client"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review5/Control/Experience" index="6"]
+offset_left = -246.0
+offset_top = -129.0
+offset_right = -138.0
+offset_bottom = -21.0
+texture = ExtResource("23_jnpcx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review5/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="client review5/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -230.0
+offset_right = 202.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review6" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(367, -1516)
+
+[node name="CollisionShape2D" parent="client review6" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review6" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review6/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review6/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review6/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review6/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "Awesome experience once again! Really clear and well documented code, with a great chat in general, along a great understanding of the prerequisites asked, thanks really! Hope we'll be able to work together later on other features keep this up!"
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review6/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- m1thieu, Fiverr client"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review6/Control/Experience" index="6"]
+offset_left = -246.0
+offset_top = -129.0
+offset_right = -138.0
+offset_bottom = -21.0
+texture = ExtResource("24_wvc35")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review6/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="client review6/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -230.0
+offset_right = 204.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review7" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(235, -1516)
+
+[node name="CollisionShape2D" parent="client review7" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review7" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review7/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review7/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review7/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review7/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "Lim did an exceptional job with the game development project, showing top-notch documentation and exceeding expectations with their professional work. They were polite, delivered on time, and demonstrated a deep understanding of the subject. Working with Lim was a highly positive experience."
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review7/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- eatiswhateatis, Fiverr client"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review7/Control/Experience" index="6"]
+offset_left = -262.0
+offset_top = -145.0
+offset_right = -122.0
+offset_bottom = -5.0
+texture = ExtResource("25_wvcuw")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review7/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="client review7/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -63.0
+offset_top = -230.0
+offset_right = 203.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review2" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(758, -1516)
+
+[node name="CollisionShape2D" parent="client review2" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review2" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review2/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review2/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review2/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review2/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "Lim built a really nice game for us, very happy with the communication and quality. Check out the game from https://zenogamedev.itch.io/monarch-of-the-machine. Highly recommended if you are looking for a godot game developer to build your game."
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review2/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- trustswz, player2.game"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review2/Control/Experience" index="6"]
+offset_left = -265.0
+offset_top = -148.0
+offset_right = -119.0
+offset_bottom = -2.0
+texture = ExtResource("23_yj1o2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review2/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="client review2/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = -230.0
+offset_right = 208.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review3" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1000, -1516)
+
+[node name="CollisionShape2D" parent="client review3" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review3" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review3/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review3/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review3/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review3/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "Lim did an amazing job creating a game that my users can play while waiting for their games to download and install. Its SO GOOD actually, they have been wanting to play IT instead of the games they just bought. Well worth the money and ill be getting Lim to further develop it. "
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review3/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- James, hardgaming.tech"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review3/Control/Experience" index="6"]
+offset_left = -265.0
+offset_top = -148.0
+offset_right = -113.0
+offset_bottom = 26.15384
+texture = ExtResource("23_klooi")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review3/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="client review3/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -230.0
+offset_right = 204.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="client review4" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(887, -1516)
+
+[node name="CollisionShape2D" parent="client review4" index="0"]
+shape = SubResource("RectangleShape2D_yjxt0")
+
+[node name="Sprite2D" parent="client review4" index="1"]
+texture = ExtResource("18_oru4r")
+
+[node name="TextureRect3" parent="client review4/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -296.00006
+offset_right = -97.23428
+offset_bottom = -127.50641
+texture = ExtResource("18_xnybo")
+
+[node name="Label" parent="client review4/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Client Review"
+horizontal_alignment = 1
+
+[node name="Label2" parent="client review4/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = ""
+
+[node name="Label3" parent="client review4/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 327.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 15
+text = "I hired Lim to participate in a Fiverr dev game jam for my YouTube channel, and the final product was fantastic and super creative! Went above and beyond with providing development footage for me to use in the video too. Great communication, would work with again!!!"
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="Label4" type="Label" parent="client review4/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.0
+offset_top = 3.0
+offset_right = 327.0
+offset_bottom = 151.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "- Juniper, Youtuber"
+autowrap_mode = 2
+clip_text = true
+text_overrun_behavior = 4
+
+[node name="TextureRect" parent="client review4/Control/Experience" index="6"]
+offset_left = -265.0
+offset_top = -148.0
+offset_right = -85.0
+offset_bottom = 27.01538
+texture = ExtResource("24_klooi")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="client review4/Control/Experience" index="7"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="client review4/Control/Experience" index="8"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -230.0
+offset_right = 198.0
+offset_bottom = -180.0
+theme_override_constants/separation = -10
+
+[node name="TextureRect" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TextureRect5" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("12_paat6")
+expand_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(-73, -36)
+scale = Vector2(6, 6)
+tile_map_data = PackedByteArray("AAAUAO7/AAABAAMAAAAUAO//AAABAAQAAAAUAPD/AAABAAUAAAAVAO7/AAACAAMAAAAVAO//AAACAAQAAAAVAPD/AAACAAUAAAAWAO7/AAADAAMAAAAWAO//AAADAAQAAAAWAPD/AAADAAUAAAA=")
+tile_set = SubResource("TileSet_mygd7")
+
+[node name="player" parent="." instance=ExtResource("5_soq7o")]
+position = Vector2(82, 700)
+walking = ExtResource("21_crou4")
+
+[node name="sign display" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1348, 297)
+
+[node name="Label2" parent="sign display/Control/Experience" index="3"]
+offset_top = -232.0
+offset_bottom = -143.0
+text = "ASEAN Data Science Master Trainer"
+autowrap_mode = 2
+
+[node name="Label3" parent="sign display/Control/Experience" index="4"]
+offset_top = -126.0
+offset_bottom = 22.0
+text = "I was in charge of giving assistance to teach high school students about Data Science for the Data Science Exploration Program initiated by ASEAN foundation. "
+
+[node name="Label4" type="Label" parent="sign display/Control/Experience" index="5"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = 12.0
+offset_right = 338.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "15/3/2024 - 10/5/2024"
+autowrap_mode = 2
+
+[node name="TextureRect" parent="sign display/Control/Experience" index="6"]
+offset_left = -309.0
+offset_top = -134.0
+offset_right = -82.21706
+offset_bottom = -19.722656
+texture = ExtResource("9_urair")
+
+[node name="sign display2" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(245, 65)
+
+[node name="Label2" parent="sign display2/Control/Experience" index="3"]
+text = "Intern at Chumbaka Inc."
+
+[node name="Label3" parent="sign display2/Control/Experience" index="4"]
+text = "I became a software intern at Chumbaka Inc. and I help in creating systems for workforce organization and hosting tech workshops for high school students."
+
+[node name="TextureRect" parent="sign display2/Control/Experience" index="5"]
+texture = ExtResource("10_d8vyo")
+
+[node name="Label4" type="Label" parent="sign display2/Control" index="1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = 12.0
+offset_right = 338.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "21/3/2024 - 30/4/2024"
+autowrap_mode = 2
+
+[node name="sign display3" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1051, -181)
+
+[node name="Label2" parent="sign display3/Control/Experience" index="3"]
+text = "Workshop Speaker"
+
+[node name="Label3" parent="sign display3/Control/Experience" index="4"]
+text = "I was invited as a speaker for multiple workshops in multiple high schools. I conducted workshops on Python programming and Mathematics for high school students."
+
+[node name="TextureRect" parent="sign display3/Control/Experience" index="5"]
+offset_left = -306.0
+offset_top = -113.0
+offset_bottom = -23.0
+texture = ExtResource("12_c053r")
+expand_mode = 2
+
+[node name="Label4" type="Label" parent="sign display3/Control/Experience" index="6"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = 12.0
+offset_right = 338.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "15/5/2024 - 11/6/2025"
+autowrap_mode = 2
+
+[node name="sign display4" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1760, -408)
+
+[node name="Label2" parent="sign display4/Control/Experience" index="3"]
+text = "Fiverr Freelancer"
+
+[node name="Label3" parent="sign display4/Control/Experience" index="4"]
+text = "I provide multiple freelance services like  website design and digital graphics design, but I'm mostly engaged in game development work."
+
+[node name="TextureRect" parent="sign display4/Control/Experience" index="5"]
+offset_left = -283.0
+offset_top = -134.0
+offset_right = -137.0
+offset_bottom = 12.0
+texture = ExtResource("13_rj52a")
+
+[node name="Label4" type="Label" parent="sign display4/Control/Experience" index="6"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = 12.0
+offset_right = 338.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 15
+text = "1/4/2024 - present"
+autowrap_mode = 2
+
+[node name="sign display5" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1098, -726)
+
+[node name="Sprite2D" parent="sign display5" index="1"]
+texture = ExtResource("14_o021v")
+
+[node name="TextureRect2" parent="sign display5/Control/Experience" index="0"]
+mouse_filter = 2
+
+[node name="TextureRect3" parent="sign display5/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -284.3404
+offset_right = -97.23428
+offset_bottom = -115.84674
+texture = ExtResource("15_m28hk")
+
+[node name="Label" parent="sign display5/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Product"
+horizontal_alignment = 1
+
+[node name="Label2" parent="sign display5/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = "Expense Flow"
+
+[node name="Label3" parent="sign display5/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 287.0
+offset_bottom = -24.0
+text = "A simple and modern expense tracker for everyone."
+
+[node name="TextureRect" parent="sign display5/Control/Experience" index="5"]
+offset_left = -265.0
+offset_top = -148.0
+offset_right = -119.0
+offset_bottom = -2.0
+texture = ExtResource("16_mkvcy")
+
+[node name="external link button" parent="sign display5/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -46.0
+offset_right = 45.0
+offset_bottom = 1.0
+link = "https://www.expenseflow.me/"
+
+[node name="sign display6" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(379, -1052)
+
+[node name="Sprite2D" parent="sign display6" index="1"]
+texture = ExtResource("14_o021v")
+
+[node name="TextureRect3" parent="sign display6/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -284.3404
+offset_right = -97.23428
+offset_bottom = -115.84674
+texture = ExtResource("15_m28hk")
+
+[node name="Label" parent="sign display6/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Product"
+horizontal_alignment = 1
+
+[node name="Label2" parent="sign display6/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = "Generation 142"
+
+[node name="Label3" parent="sign display6/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 287.0
+offset_bottom = -24.0
+text = "A story-based, single-player, Metroidvania game where you play as a person wandering in an unknown, fantasy world. Or are you?"
+
+[node name="TextureRect" parent="sign display6/Control/Experience" index="5"]
+offset_left = -288.0
+offset_top = -137.0
+offset_right = -93.807495
+offset_bottom = -13.0
+texture = ExtResource("18_m5s67")
+
+[node name="external link button" parent="sign display6/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -12.0
+offset_right = 45.0
+offset_bottom = 35.0
+link = "https://zenogamedev.itch.io/generation-142"
+
+[node name="sign display7" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(1413, -1252)
+
+[node name="Sprite2D" parent="sign display7" index="1"]
+texture = ExtResource("14_o021v")
+
+[node name="TextureRect3" parent="sign display7/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -284.3404
+offset_right = -97.23428
+offset_bottom = -115.84674
+texture = ExtResource("15_m28hk")
+
+[node name="Label" parent="sign display7/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Product"
+horizontal_alignment = 1
+
+[node name="Label2" parent="sign display7/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = "Light"
+
+[node name="Label3" parent="sign display7/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 287.0
+offset_bottom = -24.0
+text = "\"Light\" is a puzzle platformer. In this game, you can toggle switches to enable or disable a platform. You can also pick up bullets to shoot enemies. "
+
+[node name="TextureRect" parent="sign display7/Control/Experience" index="5"]
+offset_left = -278.0
+offset_top = -136.0
+offset_right = -88.0
+offset_bottom = 14.793655
+texture = ExtResource("19_867yj")
+
+[node name="external link button" parent="sign display7/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -12.0
+offset_right = 45.0
+offset_bottom = 35.0
+link = "https://zenogamedev.itch.io/light"
+
+[node name="cloud" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1193, 357)
+
+[node name="cloud2" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(418, 118)
+
+[node name="cloud3" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1026, -125)
+
+[node name="cloud4" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1613, -357)
+
+[node name="cloud5" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1187, -683)
+
+[node name="cloud6" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(466, -1006)
+
+[node name="cloud7" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1244, -1206)
+
+[node name="cloud8" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(1718, -1469)
+
+[node name="cloud9" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(2142, -1469)
+
+[node name="cloud10" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(839, -1469)
+
+[node name="cloud11" parent="." instance=ExtResource("10_bdnb5")]
+position = Vector2(368, -1469)
+
+[node name="Parallax2D6" type="Parallax2D" parent="."]
+modulate = Color(1, 1, 1, 0.27058825)
+z_index = 3
+scroll_scale = Vector2(1.1, 1.1)
+repeat_size = Vector2(1280, 960)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6"]
+position = Vector2(586.3334, 271)
+scale = Vector2(10, 10)
+texture = ExtResource("5_7dkwi")
+
+[node name="Parallax2D5" type="Parallax2D" parent="."]
+modulate = Color(1, 1, 1, 0.91764706)
+z_index = 3
+scroll_scale = Vector2(1.2, 1.2)
+repeat_size = Vector2(1280, 0)
+repeat_times = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+position = Vector2(586.3334, 271)
+scale = Vector2(10, 10)
+texture = ExtResource("6_soq7o")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5"]
+position = Vector2(586.3334, 1231)
+scale = Vector2(10, 10)
+texture = ExtResource("7_75p25")
+
+[node name="background graphics2" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics2"]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics2"]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics2"]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics2"]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics2"]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics2"]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+position = Vector2(-201, 393)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_75p25")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="wall"]
+position = Vector2(791, 637)
+shape = SubResource("WorldBoundaryShape2D_75p25")
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="wall"]
+position = Vector2(2249, 572)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_75p25")
+
+[node name="next level teleporter" parent="." instance=ExtResource("34_5uag5")]
+position = Vector2(2028, -1526)
+next_level_scene = ExtResource("35_mygd7")
+
+[node name="CollisionShape2D" parent="next level teleporter" index="0"]
+position = Vector2(-25, 8)
+shape = SubResource("RectangleShape2D_5uag5")
+
+[node name="ColorRect" parent="next level teleporter/CanvasLayer" index="0"]
+mouse_filter = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_t7dqo")
+}
+autoplay = "new_animation"
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -261.0
+offset_top = -141.5
+offset_right = 261.0
+offset_bottom = 141.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_ixxuq")
+theme_override_font_sizes/font_size = 100
+text = "Chapter 3:
+My Experiences"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("38_p115l")
+autoplay = true
+
+[editable path="client review"]
+[editable path="client review5"]
+[editable path="client review6"]
+[editable path="client review7"]
+[editable path="client review2"]
+[editable path="client review3"]
+[editable path="client review4"]
+[editable path="sign display"]
+[editable path="sign display2"]
+[editable path="sign display3"]
+[editable path="sign display4"]
+[editable path="sign display5"]
+[editable path="sign display6"]
+[editable path="sign display7"]
+[editable path="next level teleporter"]

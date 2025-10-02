@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxx41bcyxworf"]
+[gd_scene load_steps=6 format=3 uid="uid://bxx41bcyxworf"]
 
 [ext_resource type="Script" uid="uid://cdeiqbtpt5ip7" path="res://NPC/npc.gd" id="1_3etx6"]
+[ext_resource type="AudioStream" uid="uid://daopomlybu4pp" path="res://player/sound effects/typing-keyboard-sound-254462.mp3" id="2_3etx6"]
 [ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_056qb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_056qb"]
@@ -21,6 +22,7 @@ corner_radius_bottom_left = 10
 script = ExtResource("1_3etx6")
 dialogue = Array[String](["p: Hello World", "This is a test dialogue", "p: Looking good so far", "p: what do you have for me?"])
 multiple_labels = [NodePath("Label")]
+talking_audio = Array[AudioStream]([ExtResource("2_3etx6")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_056qb")
@@ -47,6 +49,8 @@ theme_override_fonts/font = ExtResource("2_056qb")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_056qb")
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

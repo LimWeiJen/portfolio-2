@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bywojwt66xwll"
+path="res://.godot/imported/typewriter-170428_1482-22815.mp3-213a7c8e2eaf712954737fe4f12d7c8a.mp3str"
+
+[deps]
+
+source_file="res://player/sound effects/typewriter-170428_1482-22815.mp3"
+dest_files=["res://.godot/imported/typewriter-170428_1482-22815.mp3-213a7c8e2eaf712954737fe4f12d7c8a.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

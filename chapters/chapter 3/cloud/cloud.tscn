@@ -1,0 +1,133 @@
+[gd_scene load_steps=9 format=3 uid="uid://2t7pyvc5xk6n"]
+
+[ext_resource type="Texture2D" uid="uid://dx3yyy7al0fd1" path="res://chapters/chapter 3/environment sprites/cloud platform.png" id="1_adjio"]
+[ext_resource type="Script" uid="uid://drs3opcu8s1xi" path="res://chapters/chapter 3/cloud/cloud.gd" id="1_kotqn"]
+[ext_resource type="AudioStream" uid="uid://ce3m3epufyg8x" path="res://player/sound effects/jellybounce-45797.mp3" id="3_djhgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dn5m6"]
+size = Vector2(554, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_adjio"]
+size = Vector2(548, 18)
+
+[sub_resource type="Animation" id="Animation_kotqn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:shape:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(554, 64)]
+}
+
+[sub_resource type="Animation" id="Animation_adjio"]
+resource_name = "bounce"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333335, 0.5),
+"transitions": PackedFloat32Array(1, 0.49999958, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 7), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("sprite:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.23333335, 0.5),
+"transitions": PackedFloat32Array(1, 0.49999958, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:shape:size")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.23, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(554, 64), Vector2(554, 30.998283), Vector2(554, 64)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kotqn"]
+_data = {
+&"RESET": SubResource("Animation_kotqn"),
+&"bounce": SubResource("Animation_adjio")
+}
+
+[node name="cloud" type="StaticBody2D"]
+script = ExtResource("1_kotqn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 33.49914)
+shape = SubResource("RectangleShape2D_dn5m6")
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -38)
+shape = SubResource("RectangleShape2D_adjio")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_kotqn")
+}
+
+[node name="sprite" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="sprite"]
+position = Vector2(0, -223.00002)
+scale = Vector2(6, 6)
+texture = ExtResource("1_adjio")
+
+[node name="Sprite2D2" type="Sprite2D" parent="sprite"]
+z_index = -1
+position = Vector2(-4, -246.99998)
+scale = Vector2(5.4583335, 6.020834)
+texture = ExtResource("1_adjio")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_djhgj")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

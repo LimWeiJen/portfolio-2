@@ -1,0 +1,315 @@
+[gd_scene load_steps=10 format=3 uid="uid://d2yexband52t1"]
+
+[ext_resource type="Texture2D" uid="uid://dgisq8o05nw2u" path="res://chapters/chapter 1/npc sprites/Sign.png" id="1_1bayw"]
+[ext_resource type="Script" uid="uid://dj44eenw0bc5j" path="res://chapters/chapter 2/employees not working/employees_not_working.gd" id="1_ax1nr"]
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_kntp6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb4wb"]
+size = Vector2(164, 72)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kntp6"]
+bg_color = Color(0.8, 0.9766666, 1, 0.5411765)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_kntp6"]
+thickness = 5
+
+[sub_resource type="Animation" id="Animation_kntp6"]
+resource_name = "show sign"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-20, -108), Vector2(-20, -131), Vector2(-20, -131)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ax1nr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-20, -131)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ax1nr"]
+_data = {
+&"RESET": SubResource("Animation_ax1nr"),
+&"show sign": SubResource("Animation_kntp6")
+}
+
+[node name="employees not working" type="Area2D"]
+script = ExtResource("1_ax1nr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mb4wb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5.25, 5.25)
+texture = ExtResource("1_1bayw")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = -131.0
+offset_right = 20.0
+offset_bottom = -91.0
+grow_horizontal = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -374.0
+offset_top = -245.0
+offset_right = 374.0
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kntp6")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -337.0
+offset_top = -236.0
+offset_right = 337.0
+offset_bottom = -193.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+text = "Employees That Did Not Come To Work Today"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -352.0
+offset_top = -200.0
+offset_right = 352.0
+offset_bottom = -152.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxLine_kntp6")
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -330.5
+offset_top = -188.0
+offset_right = 330.5
+offset_bottom = 79.0
+grow_horizontal = 2
+theme_override_constants/h_separation = 109
+columns = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/GridContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Control/GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+text = "Frontend"
+
+[node name="Label3" type="Label" parent="Control/GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "React"
+
+[node name="Label4" type="Label" parent="Control/GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Astro"
+
+[node name="Label5" type="Label" parent="Control/GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "TailwindCSS"
+
+[node name="Label6" type="Label" parent="Control/GridContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "ShadCN/ui"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/GridContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+text = "Backend"
+
+[node name="Label3" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Express"
+
+[node name="Label4" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Flask"
+
+[node name="Label5" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "MongoDB"
+
+[node name="Label6" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Prisma"
+
+[node name="Label8" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Firebase"
+
+[node name="Label9" type="Label" parent="Control/GridContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Supabase"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/GridContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Control/GridContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+text = "Game Dev"
+
+[node name="Label3" type="Label" parent="Control/GridContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Libresprite"
+
+[node name="Label4" type="Label" parent="Control/GridContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 30
+text = "Tools"
+
+[node name="Label5" type="Label" parent="Control/GridContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Figma"
+
+[node name="Label6" type="Label" parent="Control/GridContainer/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kntp6")
+theme_override_font_sizes/font_size = 20
+text = "Neovim"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ax1nr")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,234 @@
+[gd_scene load_steps=11 format=3 uid="uid://bvrcgyym7ot4y"]
+
+[ext_resource type="Texture2D" uid="uid://dkp4bjwtluev6" path="res://chapters/chapter 4/contact/contact board.png" id="1_pf6xr"]
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_y46an"]
+[ext_resource type="Texture2D" uid="uid://sey3108uvp2" path="res://chapters/chapter 4/contact/gmail.webp" id="3_cep3h"]
+[ext_resource type="Script" uid="uid://cryb0xlagpiq1" path="res://chapters/chapter 4/contact/button.gd" id="4_rwom5"]
+[ext_resource type="Texture2D" uid="uid://c8b65bqfkremw" path="res://chapters/chapter 3/images/fiverr.webp" id="5_aai3d"]
+[ext_resource type="Texture2D" uid="uid://cod7s4bu34r64" path="res://chapters/chapter 4/contact/instagram.png" id="6_2bgxu"]
+[ext_resource type="Texture2D" uid="uid://cf0c8qlctbwpe" path="res://chapters/chapter 4/contact/GitHub_Invertocat_Logo.svg.png" id="7_jresk"]
+
+[sub_resource type="Animation" id="Animation_jresk"]
+resource_name = "show contact"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8tk17"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2, 0.2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8tk17"]
+_data = {
+&"RESET": SubResource("Animation_8tk17"),
+&"show contact": SubResource("Animation_jresk")
+}
+
+[node name="contact" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+modulate = Color(0.5729883, 0.5729883, 0.5729883, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -437.33334
+offset_top = -328.0
+offset_right = 437.3334
+offset_bottom = 328.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pf6xr")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.5
+offset_top = -242.0
+offset_right = 238.5
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_y46an")
+theme_override_font_sizes/font_size = 30
+text = "Congratulations! You Have Obtained:"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -295.5
+offset_top = 276.0
+offset_right = 295.5
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_y46an")
+theme_override_font_sizes/font_size = 15
+text = "© 2025 limweijen. All rights reserved."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -258.5
+offset_top = -158.0
+offset_right = 258.5
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_y46an")
+theme_override_font_sizes/font_size = 70
+text = "Lim Wei Jen's
+Contact Info"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -275.0
+offset_top = 100.0
+offset_right = 275.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+pivot_offset = Vector2(49, 49)
+icon = ExtResource("3_cep3h")
+flat = true
+expand_icon = true
+script = ExtResource("4_rwom5")
+link = "mailto:limweijen96@gmail.com"
+
+[node name="Button2" type="Button" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 150.0
+offset_right = 250.0
+offset_bottom = 100.0
+pivot_offset = Vector2(52, 50)
+icon = ExtResource("5_aai3d")
+flat = true
+expand_icon = true
+script = ExtResource("4_rwom5")
+link = "https://www.fiverr.com/limweijen?public_mode=true"
+
+[node name="Button3" type="Button" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 300.0
+offset_right = 400.0
+offset_bottom = 100.0
+pivot_offset = Vector2(50, 50)
+icon = ExtResource("6_2bgxu")
+flat = true
+expand_icon = true
+script = ExtResource("4_rwom5")
+link = "https://www.instagram.com/limweijen96/"
+
+[node name="Button4" type="Button" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 450.0
+offset_right = 550.0
+offset_bottom = 100.0
+pivot_offset = Vector2(49, 52)
+icon = ExtResource("7_jresk")
+flat = true
+expand_icon = true
+script = ExtResource("4_rwom5")
+link = "https://github.com/LimWeiJen"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_8tk17")
+}
+
+[connection signal="pressed" from="Control/HBoxContainer/Button" to="Control/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/Button2" to="Control/HBoxContainer/Button2" method="_on_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/Button3" to="Control/HBoxContainer/Button3" method="_on_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/Button4" to="Control/HBoxContainer/Button4" method="_on_pressed"]

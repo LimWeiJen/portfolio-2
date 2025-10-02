@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8v8c208cllm5"]
+
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="1_n1kgs"]
+[ext_resource type="Script" uid="uid://dr7340f0u6cr0" path="res://chapters/chapter 3/sign display/external_link_button.gd" id="2_kwaoc"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_n1kgs"]
+thickness = 4
+
+[node name="external link button" type="Button"]
+offset_right = 103.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_n1kgs")
+theme_override_font_sizes/font_size = 20
+text = "Try it out"
+flat = true
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("2_kwaoc")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -10.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxLine_n1kgs")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

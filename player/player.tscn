@@ -1,13 +1,19 @@
-[gd_scene load_steps=33 format=3 uid="uid://fdb8t12ej0n1"]
+[gd_scene load_steps=40 format=3 uid="uid://fdb8t12ej0n1"]
 
 [ext_resource type="Script" uid="uid://bxc4aq81utiig" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="AudioStream" uid="uid://c24ittnouv0u5" path="res://player/sound effects/swoosh-07-351043.mp3" id="2_8t03j"]
 [ext_resource type="Texture2D" uid="uid://q8ci44qf6ahc" path="res://player/sprites/Player Idle.png" id="2_rkbax"]
+[ext_resource type="AudioStream" uid="uid://cxj8wtlj65bnj" path="res://player/sound effects/walk-on-dirt-1-291981.mp3" id="3_ebec5"]
 [ext_resource type="Texture2D" uid="uid://dgk3c3lkodcqm" path="res://player/sprites/Player Jump.png" id="3_g1dw6"]
 [ext_resource type="Texture2D" uid="uid://b31jtwvco7en" path="res://player/sprites/Player Double Jump.png" id="3_yw30f"]
 [ext_resource type="Texture2D" uid="uid://chc6n0uaca1ei" path="res://player/sprites/Player Fall.png" id="4_qjkh3"]
+[ext_resource type="AudioStream" uid="uid://bfsih5gu51j2" path="res://player/sound effects/swoosh-06-351021.mp3" id="5_yllr7"]
 [ext_resource type="Texture2D" uid="uid://dugrvjxruwbau" path="res://player/sprites/Player Walk.png" id="6_g6k8r"]
+[ext_resource type="AudioStream" uid="uid://07rjykb0rqjf" path="res://player/sound effects/stone fall.mp3" id="6_kb6p2"]
 [ext_resource type="Texture2D" uid="uid://b3a5rhtslupih" path="res://player/sprites/Player Wall Slide.png" id="7_boad6"]
 [ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="8_rgyib"]
+[ext_resource type="AudioStream" uid="uid://kvqu2wjjnvbq" path="res://player/sound effects/sand-walk-106366.mp3" id="9_hg6s5"]
+[ext_resource type="Texture2D" uid="uid://cvnwxkuh87h5o" path="res://player/sprites/Player.png" id="13_yllr7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kqu6x"]
 size = Vector2(42, 72)
@@ -188,6 +194,33 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
+[sub_resource type="Animation" id="Animation_hg6s5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("interact label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("interact label:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-18.5, -108)]
+}
+
 [sub_resource type="Animation" id="Animation_rgyib"]
 resource_name = "show interact sign"
 length = 0.3
@@ -216,38 +249,14 @@ tracks/1/keys = {
 "values": [Vector2(-18.5, -108), Vector2(-18.5, -117)]
 }
 
-[sub_resource type="Animation" id="Animation_hg6s5"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("interact label:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("interact label:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-18.5, -108)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hg6s5"]
 _data = {
 &"RESET": SubResource("Animation_hg6s5"),
 &"show interact sign": SubResource("Animation_rgyib")
 }
+
+[sub_resource type="Gradient" id="Gradient_yllr7"]
+colors = PackedColorArray(0, 0, 0, 0.14901961, 0, 0, 0, 0)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_rkbax")
@@ -259,6 +268,11 @@ fast_fall_multiplier = 4.0
 dash_speed = 1000.0
 wall_jump_velocity = Vector2(100, -500)
 wall_jump_push_time = 0.1
+walking = ExtResource("9_hg6s5")
+wall_climb = ExtResource("3_ebec5")
+jump = ExtResource("2_8t03j")
+dash = ExtResource("5_yllr7")
+fall = ExtResource("6_kb6p2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_kqu6x")
@@ -323,3 +337,15 @@ horizontal_alignment = 1
 libraries = {
 &"": SubResource("AnimationLibrary_hg6s5")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_hg6s5")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 20
+texture = ExtResource("13_yllr7")
+gravity = Vector2(0, 0)
+scale_amount_min = 5.25
+scale_amount_max = 5.25
+color_ramp = SubResource("Gradient_yllr7")

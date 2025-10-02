@@ -1,0 +1,214 @@
+[gd_scene load_steps=11 format=3 uid="uid://bkqm7cub82atg"]
+
+[ext_resource type="Script" uid="uid://dsihit1e41d4i" path="res://chapters/chapter 3/sign display/sign_display.gd" id="1_kdflh"]
+[ext_resource type="Texture2D" uid="uid://ck3kssr0sbifj" path="res://chapters/chapter 3/sign sprites/tree.png" id="1_skxsn"]
+[ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="3_y6td0"]
+[ext_resource type="Texture2D" uid="uid://c28edtk8nggdx" path="res://lightmap.png" id="4_1jdwc"]
+[ext_resource type="Texture2D" uid="uid://dcwln3bcynxrp" path="res://chapters/chapter 3/sign sprites/wooden sign.png" id="4_b14rb"]
+[ext_resource type="Texture2D" uid="uid://cejowql8e1f88" path="res://chapters/chapter 3/sign sprites/cloud.png" id="5_ggnk7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbtcc"]
+size = Vector2(210, 95)
+
+[sub_resource type="Animation" id="Animation_ax1nr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-20, -131)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kntp6"]
+resource_name = "show sign"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-20, -108), Vector2(-20, -131), Vector2(-20, -131)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:scale")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5, 0.5), Vector2(1, 1), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ax1nr"]
+_data = {
+&"RESET": SubResource("Animation_ax1nr"),
+&"show sign": SubResource("Animation_kntp6")
+}
+
+[node name="sign display" type="Area2D"]
+script = ExtResource("1_kdflh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_lbtcc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(6, 6)
+texture = ExtResource("1_skxsn")
+
+[node name="Control" type="Control" parent="."]
+z_index = 2
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = -131.0
+offset_right = 20.0
+offset_bottom = -91.0
+grow_horizontal = 2
+
+[node name="Experience" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="Control/Experience"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -384.0
+offset_top = -298.0
+offset_right = 384.0
+offset_bottom = 86.0
+grow_horizontal = 2
+texture = ExtResource("5_ggnk7")
+
+[node name="TextureRect3" type="TextureRect" parent="Control/Experience"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -392.0
+offset_top = -268.0
+offset_right = -136.0
+offset_bottom = -140.0
+grow_horizontal = 2
+rotation = -0.09438476
+texture = ExtResource("4_b14rb")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Control/Experience"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -352.0
+offset_top = -233.0
+offset_right = -177.0
+offset_bottom = -190.0
+grow_horizontal = 2
+rotation = -0.08561212
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_y6td0")
+theme_override_font_sizes/font_size = 30
+text = "Experience"
+
+[node name="Label2" type="Label" parent="Control/Experience"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -101.0
+offset_top = -220.0
+offset_right = 306.0
+offset_bottom = -177.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_y6td0")
+theme_override_font_sizes/font_size = 30
+text = "Intern in Chumbaka Inc"
+
+[node name="Label3" type="Label" parent="Control/Experience"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_top = -162.0
+offset_right = 338.0
+offset_bottom = -14.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_y6td0")
+theme_override_font_sizes/font_size = 20
+text = "Created systems for workforce organization"
+autowrap_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Experience"]
+layout_mode = 0
+offset_left = -281.0
+offset_top = -141.0
+offset_right = -106.0
+offset_bottom = 34.0
+texture = ExtResource("4_1jdwc")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ax1nr")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

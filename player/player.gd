@@ -94,6 +94,7 @@ func _physics_process(delta: float) -> void:
 
 	# Handle dash
 	if is_dashing:
+		$CPUParticles2D.emitting = true
 		handle_dash(delta)
 		move_and_slide()
 		return
@@ -107,12 +108,21 @@ func _physics_process(delta: float) -> void:
 
 	# Get input direction
 	var input_direction: float = Input.get_axis("left", "right")
+	if is_on_floor() and input_direction != 0 and not audio_player.playing:
+		audio_player.stream = walking
+		audio_player.play()
+	elif audio_player.playing and input_direction == 0:
+		audio_player.stop()
 
 	# Handle wall jump
 	if enable_wall_mechanics and Input.is_action_just_pressed("up") and is_on_wall_sliding():
+		audio_player.stream = wall_climb
+		audio_player.play()
 		handle_wall_jump()
 	# Handle regular jump
 	elif Input.is_action_just_pressed("up"):
+		audio_player.stream = jump
+		audio_player.play()
 		jump_buffer_timer = jump_buffer_time
 
 	# Process jump buffer
@@ -125,6 +135,8 @@ func _physics_process(delta: float) -> void:
 
 	# Handle dash input
 	if enable_dash and Input.is_action_just_pressed("dash") and can_dash:  # Using Shift key
+		audio_player.stream = dash
+		audio_player.play()
 		start_dash(input_direction)
 
 	# Handle horizontal movement (unless in wall jump push time)
@@ -173,7 +185,7 @@ func apply_gravity(delta: float) -> void:
 		var current_gravity = gravity * gravity_scale
 
 		# Apply fast fall when holding down
-		if Input.is_action_pressed("ui_down") and velocity.y > 0:
+		if Input.is_action_pressed("down") and velocity.y > 0:
 			current_gravity *= fast_fall_multiplier
 
 		velocity.y += current_gravity * delta
@@ -280,6 +292,7 @@ func handle_dash(_delta: float) -> void:
 
 	if dash_timer <= 0:
 		is_dashing = false
+		$CPUParticles2D.emitting = false
 		velocity *= 0.5  # Reduce velocity after dash
 
 func handle_horizontal_movement(input_direction: float, delta: float) -> void:
@@ -301,6 +314,7 @@ func handle_horizontal_movement(input_direction: float, delta: float) -> void:
 
 	# Flip sprite based on direction
 	if input_direction != 0:
+		$CPUParticles2D.scale.x = -1 if input_direction < 0 else 1
 		animated_sprite.flip_h = input_direction < 0
 
 func update_state_after_movement() -> void:
@@ -358,6 +372,15 @@ func update_animations(_input_direction: float) -> void:
 
 #endregion
 
+#region Sound Effects
+@onready var audio_player = $AudioStreamPlayer2D
+@export_group("Sound Effects")
+@export var walking: AudioStream
+@export var wall_climb: AudioStream
+@export var jump: AudioStream
+@export var dash: AudioStream
+@export var fall: AudioStream
+
 #region Dialogue
 @onready var interact_sign = $"interact label"
 @onready var dialogue_label = $"Label"
@@ -367,5 +390,6 @@ func show_interact_sign():
 	animation_player.play("show interact sign")
 
 func hide_interact_sign():
-	animation_player.play_backwards("show interact sign")
+	if interact_sign.modulate.a > 0:
+		animation_player.play_backwards("show interact sign")
 #endregion
