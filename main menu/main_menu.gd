@@ -53,4 +53,4 @@ func _on_ready_button_pressed():
 
 
 func _on_text_version_button_pressed():
-	OS.shell_open("https://limweijen-text.vercel.app/")
+	OS.shell_open("https://text.limweijen.com/")
