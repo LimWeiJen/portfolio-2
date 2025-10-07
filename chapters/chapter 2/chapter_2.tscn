@@ -570,7 +570,7 @@ _data = {
 [node name="Parallax2D" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.2, 0.2)
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(586.3334, 338.00003)
@@ -580,7 +580,7 @@ texture = ExtResource("2_0rnry")
 [node name="Parallax2D2" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.3, 0.3)
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
 position = Vector2(586.3334, 338.00003)
@@ -590,7 +590,7 @@ texture = ExtResource("1_dwed3")
 [node name="Parallax2D3" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
 position = Vector2(586.3334, 338.00003)

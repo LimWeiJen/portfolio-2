@@ -342,7 +342,7 @@ _data = {
 modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 z_index = -2
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(586.3334, 338.00003)
@@ -354,7 +354,7 @@ modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 z_index = -2
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
 position = Vector2(586.3334, 338.00003)
@@ -366,7 +366,7 @@ modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 z_index = -2
 scroll_scale = Vector2(0.3, 0.3)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
 position = Vector2(586.3334, 338.00003)
@@ -378,7 +378,7 @@ modulate = Color(0.34781694, 0.34781697, 0.3478169, 1)
 z_index = -2
 scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
 position = Vector2(586.3334, 338.00003)
