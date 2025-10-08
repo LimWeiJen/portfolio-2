@@ -262,7 +262,7 @@ script = ExtResource("1_vltye")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(586.3334, 338.00003)
@@ -272,7 +272,7 @@ texture = ExtResource("1_5bngd")
 [node name="Parallax2D4" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
 position = Vector2(586.3334, 338.00003)
@@ -282,7 +282,7 @@ texture = ExtResource("2_vltye")
 [node name="Parallax2D3" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.3, 0.3)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
 position = Vector2(586.3334, 338.00003)
@@ -292,7 +292,7 @@ texture = ExtResource("3_uef0c")
 [node name="Parallax2D2" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
 position = Vector2(586.3334, 338.00003)
@@ -305,7 +305,7 @@ texture = ExtResource("4_8s3e4")
 modulate = Color(1, 1, 1, 0.27058825)
 scroll_scale = Vector2(1.1, 1.1)
 repeat_size = Vector2(1280, 960)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D6"]
 position = Vector2(586.3334, 271)
@@ -315,6 +315,7 @@ texture = ExtResource("6_1m6bl")
 [node name="Parallax2D7" type="Parallax2D" parent="."]
 modulate = Color(1, 1, 1, 0.9098039)
 scroll_scale = Vector2(0.5, 0.5)
+repeat_times = 10
 
 [node name="Label" type="Label" parent="Parallax2D7"]
 anchors_preset = 8
@@ -336,6 +337,7 @@ horizontal_alignment = 1
 modulate = Color(1, 1, 1, 0.41960785)
 scroll_scale = Vector2(0.505, 0.505)
 scroll_offset = Vector2(109, 0)
+repeat_times = 10
 
 [node name="Label" type="Label" parent="Parallax2D8"]
 anchors_preset = 8
@@ -356,6 +358,7 @@ horizontal_alignment = 1
 [node name="Parallax2D9" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.5, 0.5)
 scroll_offset = Vector2(0, 20)
+repeat_times = 10
 
 [node name="Button" type="Button" parent="Parallax2D9"]
 modulate = Color(1, 1, 1, 0)
@@ -396,7 +399,7 @@ libraries = {
 modulate = Color(1, 1, 1, 0.91764706)
 scroll_scale = Vector2(1.2, 1.2)
 repeat_size = Vector2(1280, 0)
-repeat_times = 3
+repeat_times = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
 position = Vector2(586.3334, 271)
