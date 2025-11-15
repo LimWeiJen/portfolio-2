@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://cvj0ukncyb5pa"]
+[gd_scene load_steps=48 format=4 uid="uid://cvj0ukncyb5pa"]
 
 [ext_resource type="Texture2D" uid="uid://ipb311v4n477" path="res://chapters/chapter 1/environment sprites/background.png" id="1_2k3ox"]
 [ext_resource type="Script" uid="uid://c0arw83415esb" path="res://chapters/chapter 3/chapter_3.gd" id="1_ssp65"]
@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://cvomg6as6uyrk" path="res://chapters/chapter 3/images/juniper.png" id="24_klooi"]
 [ext_resource type="Texture2D" uid="uid://bbddy73xkk8f6" path="res://chapters/chapter 3/images/m1thiew.webp" id="24_wvc35"]
 [ext_resource type="Texture2D" uid="uid://cj0xsjyk3wkkk" path="res://chapters/chapter 3/images/e.jpg" id="25_wvcuw"]
+[ext_resource type="Texture2D" uid="uid://c74yll6861ht5" path="res://chapters/chapter 3/images/rec um.png" id="31_uhx82"]
 [ext_resource type="Texture2D" uid="uid://btvp3uwoev8sh" path="res://chapters/chapter 1/environment sprites/tilemap.png" id="33_1gt7a"]
 [ext_resource type="PackedScene" uid="uid://cxog5psgyyt40" path="res://next level teleporter/next_level_teleporter.tscn" id="34_5uag5"]
 [ext_resource type="PackedScene" uid="uid://ce88y1pevtcre" path="res://chapters/chapter 4/chapter_4.tscn" id="35_mygd7"]
@@ -1343,6 +1344,57 @@ offset_right = 45.0
 offset_bottom = 35.0
 link = "https://zenogamedev.itch.io/generation-142"
 
+[node name="sign display8" parent="." instance=ExtResource("12_2i6nm")]
+position = Vector2(634, -1052)
+
+[node name="Sprite2D" parent="sign display8" index="1"]
+texture = ExtResource("14_o021v")
+
+[node name="TextureRect3" parent="sign display8/Control/Experience" index="1"]
+offset_left = -434.2216
+offset_top = -284.3404
+offset_right = -97.23428
+offset_bottom = -115.84674
+texture = ExtResource("15_m28hk")
+
+[node name="Label" parent="sign display8/Control/Experience" index="2"]
+offset_left = -353.0
+offset_top = -237.0
+offset_right = -178.0
+offset_bottom = -194.0
+rotation = -0.1040535
+text = "Product"
+horizontal_alignment = 1
+
+[node name="Label2" parent="sign display8/Control/Experience" index="3"]
+offset_left = -74.0
+offset_top = -227.0
+offset_right = 333.0
+offset_bottom = -184.0
+text = "REC UM Website"
+
+[node name="Label3" parent="sign display8/Control/Experience" index="4"]
+offset_left = -74.0
+offset_top = -172.0
+offset_right = 287.0
+offset_bottom = -24.0
+text = "I led the design and development of the Robotics Engineering Community (REC UM) website at the University of Malaya."
+
+[node name="TextureRect" parent="sign display8/Control/Experience" index="5"]
+offset_left = -288.0
+offset_top = -137.0
+offset_right = -93.807495
+offset_bottom = -13.0
+texture = ExtResource("31_uhx82")
+
+[node name="external link button" parent="sign display8/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -12.0
+offset_right = 45.0
+offset_bottom = 35.0
+link = "https://rec-um.vercel.app/"
+
 [node name="sign display7" parent="." instance=ExtResource("12_2i6nm")]
 position = Vector2(1413, -1252)
 
@@ -1569,5 +1621,6 @@ autoplay = true
 [editable path="sign display4"]
 [editable path="sign display5"]
 [editable path="sign display6"]
+[editable path="sign display8"]
 [editable path="sign display7"]
 [editable path="next level teleporter"]
