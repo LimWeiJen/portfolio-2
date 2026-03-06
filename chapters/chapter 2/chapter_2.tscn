@@ -488,7 +488,18 @@ content_margin_left = 10.0
 content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(1, 1, 1, 0.8901961)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5rv1d"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(1, 1, 1, 0.8901961)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -624,11 +635,11 @@ texture = ExtResource("3_l534y")
 position = Vector2(1125, -426)
 dialogue = Array[String](["anim:awake", "anim:idle", "0:Who are you? Why are you disturbing my peaceful sleep?", "p:Sorry to bother you, mister cat. Do you know a guy named Lim Wei Jen?", "0:Of course! I guard his secrets... His half-finished experiments... all safe with me.", "0:I do not just protect his secrets. I protect everyone's.", "0:For I am not the hero they deserve... but the hero they need.", "anim:smirk", "0:I'm batm- I mean Github", "anim:idle"])
 
-[node name="CollisionShape2D" parent="npc" index="0"]
+[node name="CollisionShape2D" parent="npc" index="0" unique_id=370298396]
 position = Vector2(-89, 10)
 shape = SubResource("RectangleShape2D_uynys")
 
-[node name="Sprite2D" parent="npc" index="1"]
+[node name="Sprite2D" parent="npc" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_gaqhi")
 animation = &"idle"
 autoplay = "default"
@@ -637,11 +648,11 @@ autoplay = "default"
 position = Vector2(50, -234)
 dialogue = Array[String](["0:Hey, I noticed you’ve been staring at this function for twenty minutes.", "0:Take a rest buddy, let me handle it. I can defy gravity for you."])
 
-[node name="CollisionShape2D" parent="npc2" index="0"]
+[node name="CollisionShape2D" parent="npc2" index="0" unique_id=370298396]
 position = Vector2(0.5625, 10)
 shape = SubResource("RectangleShape2D_gxtk0")
 
-[node name="Sprite2D" parent="npc2" index="1"]
+[node name="Sprite2D" parent="npc2" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_20k58")
 autoplay = "default"
 
@@ -649,11 +660,11 @@ autoplay = "default"
 position = Vector2(-345, -234)
 dialogue = Array[String](["0:updating... please do not close your computer..."])
 
-[node name="CollisionShape2D" parent="npc7" index="0"]
+[node name="CollisionShape2D" parent="npc7" index="0" unique_id=370298396]
 position = Vector2(0.5625, 10)
 shape = SubResource("RectangleShape2D_gxtk0")
 
-[node name="Sprite2D" parent="npc7" index="1"]
+[node name="Sprite2D" parent="npc7" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_ksx6q")
 autoplay = "default"
 frame_progress = 0.24647188
@@ -662,11 +673,11 @@ frame_progress = 0.24647188
 position = Vector2(528, -425)
 dialogue = Array[String](["0:What version am I at again?"])
 
-[node name="CollisionShape2D" parent="npc3" index="0"]
+[node name="CollisionShape2D" parent="npc3" index="0" unique_id=370298396]
 position = Vector2(44, 3)
 shape = SubResource("RectangleShape2D_cun2x")
 
-[node name="Sprite2D" parent="npc3" index="1"]
+[node name="Sprite2D" parent="npc3" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_jkbbk")
 autoplay = "default"
 
@@ -674,11 +685,11 @@ autoplay = "default"
 position = Vector2(1955, -617)
 dialogue = Array[String](["0:Why am I in a 2D space?"])
 
-[node name="CollisionShape2D" parent="npc4" index="0"]
+[node name="CollisionShape2D" parent="npc4" index="0" unique_id=370298396]
 position = Vector2(44, 3)
 shape = SubResource("RectangleShape2D_cun2x")
 
-[node name="Sprite2D" parent="npc4" index="1"]
+[node name="Sprite2D" parent="npc4" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_cun2x")
 autoplay = "default"
 
@@ -686,11 +697,11 @@ autoplay = "default"
 position = Vector2(1168, 439)
 dialogue = Array[String](["anim:default", "0:work work work work work work work work work work"])
 
-[node name="CollisionShape2D" parent="npc5" index="0"]
+[node name="CollisionShape2D" parent="npc5" index="0" unique_id=370298396]
 position = Vector2(-1.3046875, 3)
 shape = SubResource("RectangleShape2D_27lui")
 
-[node name="Sprite2D" parent="npc5" index="1"]
+[node name="Sprite2D" parent="npc5" index="1" unique_id=1061865446]
 sprite_frames = SubResource("SpriteFrames_o43xw")
 animation = &"new_animation"
 autoplay = "new_animation"
@@ -700,11 +711,11 @@ position = Vector2(1888, 440)
 dialogue = Array[String](["0:I'm better!", "1:No, I'm better!", "2:Kids these days..."])
 multiple_labels = [NodePath("Label"), NodePath("Label2"), NodePath("Label3")]
 
-[node name="CollisionShape2D" parent="npc6" index="0"]
+[node name="CollisionShape2D" parent="npc6" index="0" unique_id=370298396]
 position = Vector2(152.65234, 3)
 shape = SubResource("RectangleShape2D_t4wku")
 
-[node name="Sprite2D" parent="npc6" index="1"]
+[node name="Sprite2D" parent="npc6" index="1" unique_id=1061865446]
 position = Vector2(129, -1)
 sprite_frames = SubResource("SpriteFrames_27lui")
 autoplay = "default"
@@ -757,7 +768,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("16_rflqm")
 theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_056qb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5rv1d")
 horizontal_alignment = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=545363569]
