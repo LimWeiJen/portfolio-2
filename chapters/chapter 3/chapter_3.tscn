@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://cvj0ukncyb5pa"]
+[gd_scene format=4 uid="uid://cvj0ukncyb5pa"]
 
 [ext_resource type="Texture2D" uid="uid://ipb311v4n477" path="res://chapters/chapter 1/environment sprites/background.png" id="1_2k3ox"]
 [ext_resource type="Script" uid="uid://c0arw83415esb" path="res://chapters/chapter 3/chapter_3.gd" id="1_ssp65"]
@@ -20,7 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://c8b65bqfkremw" path="res://chapters/chapter 3/images/fiverr.webp" id="13_rj52a"]
 [ext_resource type="Texture2D" uid="uid://db183r13v4oy4" path="res://chapters/chapter 3/sign sprites/present.png" id="14_o021v"]
 [ext_resource type="Texture2D" uid="uid://dhdgoaa7wliki" path="res://chapters/chapter 3/sign sprites/ribbon.png" id="15_m28hk"]
-[ext_resource type="Texture2D" uid="uid://bj1ctdu0hrcyt" path="res://chapters/chapter 3/images/expense flow.png" id="16_mkvcy"]
 [ext_resource type="PackedScene" uid="uid://b8v8c208cllm5" path="res://chapters/chapter 3/sign display/external_link_button.tscn" id="17_yl2qr"]
 [ext_resource type="Texture2D" uid="uid://8g0imwrgipyq" path="res://chapters/chapter 3/images/generation 142.png" id="18_m5s67"]
 [ext_resource type="Texture2D" uid="uid://gpy6jatpge1d" path="res://chapters/chapter 3/sign sprites/star.png" id="18_oru4r"]
@@ -34,7 +33,8 @@
 [ext_resource type="Texture2D" uid="uid://cvomg6as6uyrk" path="res://chapters/chapter 3/images/juniper.png" id="24_klooi"]
 [ext_resource type="Texture2D" uid="uid://bbddy73xkk8f6" path="res://chapters/chapter 3/images/m1thiew.webp" id="24_wvc35"]
 [ext_resource type="Texture2D" uid="uid://cj0xsjyk3wkkk" path="res://chapters/chapter 3/images/e.jpg" id="25_wvcuw"]
-[ext_resource type="Texture2D" uid="uid://c74yll6861ht5" path="res://chapters/chapter 3/images/rec um.png" id="31_uhx82"]
+[ext_resource type="Texture2D" uid="uid://bll3kq7e6b2or" path="res://chapters/chapter 3/images/elixir.png" id="28_uhx82"]
+[ext_resource type="Texture2D" uid="uid://bsldb7msrqks8" path="res://chapters/chapter 3/images/3d magnetic field.png" id="31_uhx82"]
 [ext_resource type="Texture2D" uid="uid://btvp3uwoev8sh" path="res://chapters/chapter 1/environment sprites/tilemap.png" id="33_1gt7a"]
 [ext_resource type="PackedScene" uid="uid://cxog5psgyyt40" path="res://next level teleporter/next_level_teleporter.tscn" id="34_5uag5"]
 [ext_resource type="PackedScene" uid="uid://ce88y1pevtcre" path="res://chapters/chapter 4/chapter_4.tscn" id="35_mygd7"]
@@ -149,175 +149,175 @@ _data = {
 &"new_animation": SubResource("Animation_jddgd")
 }
 
-[node name="chapter 3" type="Node2D"]
+[node name="chapter 3" type="Node2D" unique_id=151550182]
 script = ExtResource("1_ssp65")
 
-[node name="Parallax2D" type="Parallax2D" parent="."]
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=2042246218]
 z_index = -2
 repeat_size = Vector2(1280, 960)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=2127453125]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("1_2k3ox")
 
-[node name="Parallax2D4" type="Parallax2D" parent="."]
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=456176406]
 z_index = -2
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=1668999774]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("2_8coio")
 
-[node name="Parallax2D3" type="Parallax2D" parent="."]
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1269387982]
 z_index = -2
 scroll_scale = Vector2(0.3, 0.3)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=1367524322]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("3_e1mbj")
 
-[node name="Parallax2D2" type="Parallax2D" parent="."]
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=971805143]
 z_index = -2
 scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=893114670]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("4_7dkwi")
 
-[node name="background graphics" type="Node2D" parent="."]
+[node name="background graphics" type="Node2D" parent="." unique_id=217197555]
 
-[node name="Sprite2D7" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics" unique_id=671031425]
 position = Vector2(-233, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D8" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D8" type="Sprite2D" parent="background graphics" unique_id=1676704464]
 position = Vector2(203, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D9" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D9" type="Sprite2D" parent="background graphics" unique_id=617964112]
 position = Vector2(649, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D10" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D10" type="Sprite2D" parent="background graphics" unique_id=2064071770]
 position = Vector2(1021, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D11" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D11" type="Sprite2D" parent="background graphics" unique_id=1767874633]
 position = Vector2(1457, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D12" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D12" type="Sprite2D" parent="background graphics" unique_id=1801248192]
 position = Vector2(1903, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D13" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D13" type="Sprite2D" parent="background graphics" unique_id=1302024713]
 position = Vector2(745, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D14" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D14" type="Sprite2D" parent="background graphics" unique_id=1840653946]
 position = Vector2(1181, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D15" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D15" type="Sprite2D" parent="background graphics" unique_id=742380552]
 position = Vector2(1627, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D16" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D16" type="Sprite2D" parent="background graphics" unique_id=359663462]
 position = Vector2(1999, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D17" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D17" type="Sprite2D" parent="background graphics" unique_id=282027998]
 position = Vector2(2435, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D18" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D18" type="Sprite2D" parent="background graphics" unique_id=1484727330]
 position = Vector2(2881, 353)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D19" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D19" type="Sprite2D" parent="background graphics" unique_id=1574122892]
 position = Vector2(2450, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D20" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D20" type="Sprite2D" parent="background graphics" unique_id=1378605235]
 position = Vector2(2886, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D21" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D21" type="Sprite2D" parent="background graphics" unique_id=84374091]
 position = Vector2(3332, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D22" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D22" type="Sprite2D" parent="background graphics" unique_id=1636667106]
 position = Vector2(3704, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D23" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D23" type="Sprite2D" parent="background graphics" unique_id=1796008864]
 position = Vector2(4140, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D24" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D24" type="Sprite2D" parent="background graphics" unique_id=1301946500]
 position = Vector2(4586, 642)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D25" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D25" type="Sprite2D" parent="background graphics" unique_id=1653314571]
 position = Vector2(-2655, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D26" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D26" type="Sprite2D" parent="background graphics" unique_id=300832960]
 position = Vector2(-2219, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D27" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D27" type="Sprite2D" parent="background graphics" unique_id=2084012263]
 position = Vector2(-1773, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D28" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D28" type="Sprite2D" parent="background graphics" unique_id=879334686]
 position = Vector2(-1401, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D29" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D29" type="Sprite2D" parent="background graphics" unique_id=1295613600]
 position = Vector2(-965, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D30" type="Sprite2D" parent="background graphics"]
+[node name="Sprite2D30" type="Sprite2D" parent="background graphics" unique_id=189217652]
 position = Vector2(-519, 629)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="client review" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review" parent="." unique_id=533968622 instance=ExtResource("12_2i6nm")]
 position = Vector2(625, -1516)
 
 [node name="CollisionShape2D" parent="client review" index="0"]
@@ -359,7 +359,7 @@ text = "i highly recommend working with Lim, the game was executed fast and he i
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review/Control/Experience" index="5" unique_id=1327526416]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -384,7 +384,7 @@ offset_right = -119.0
 offset_bottom = -2.0
 texture = ExtResource("20_yjxt0")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review/Control/Experience" index="7" unique_id=1020708458]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -392,37 +392,37 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="client review/Control/Experience/HBoxContainer" unique_id=1772418486]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+[node name="TextureRect2" type="TextureRect" parent="client review/Control/Experience/HBoxContainer" unique_id=2056024408]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+[node name="TextureRect3" type="TextureRect" parent="client review/Control/Experience/HBoxContainer" unique_id=1034986876]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+[node name="TextureRect4" type="TextureRect" parent="client review/Control/Experience/HBoxContainer" unique_id=1618433950]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review/Control/Experience/HBoxContainer"]
+[node name="TextureRect5" type="TextureRect" parent="client review/Control/Experience/HBoxContainer" unique_id=692611645]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review5" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review5" parent="." unique_id=1780513704 instance=ExtResource("12_2i6nm")]
 position = Vector2(497, -1516)
 
 [node name="CollisionShape2D" parent="client review5" index="0"]
@@ -464,7 +464,7 @@ text = "Once again a pleasure working with Lim - he's professional, proactive, a
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review5/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review5/Control/Experience" index="5" unique_id=1737406600]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -489,7 +489,7 @@ offset_right = -138.0
 offset_bottom = -21.0
 texture = ExtResource("23_jnpcx")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review5/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review5/Control/Experience" index="7" unique_id=588765917]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -497,7 +497,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="client review5/Control/Experience" index="8"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="client review5/Control/Experience" index="8" unique_id=139895212]
 layout_mode = 0
 offset_left = -64.0
 offset_top = -230.0
@@ -505,37 +505,37 @@ offset_right = 202.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+[node name="TextureRect" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2" unique_id=1657125427]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+[node name="TextureRect2" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2" unique_id=811577971]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+[node name="TextureRect3" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2" unique_id=647111696]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+[node name="TextureRect4" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2" unique_id=769602178]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2"]
+[node name="TextureRect5" type="TextureRect" parent="client review5/Control/Experience/HBoxContainer2" unique_id=194057531]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review6" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review6" parent="." unique_id=677442654 instance=ExtResource("12_2i6nm")]
 position = Vector2(367, -1516)
 
 [node name="CollisionShape2D" parent="client review6" index="0"]
@@ -577,7 +577,7 @@ text = "Awesome experience once again! Really clear and well documented code, wi
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review6/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review6/Control/Experience" index="5" unique_id=25805843]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -602,7 +602,7 @@ offset_right = -138.0
 offset_bottom = -21.0
 texture = ExtResource("24_wvc35")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review6/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review6/Control/Experience" index="7" unique_id=455049508]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -610,7 +610,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="client review6/Control/Experience" index="8"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="client review6/Control/Experience" index="8" unique_id=436947842]
 layout_mode = 0
 offset_left = -62.0
 offset_top = -230.0
@@ -618,37 +618,37 @@ offset_right = 204.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+[node name="TextureRect" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3" unique_id=1316239141]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+[node name="TextureRect2" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3" unique_id=1058267983]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+[node name="TextureRect3" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3" unique_id=1797023282]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+[node name="TextureRect4" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3" unique_id=1133897008]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3"]
+[node name="TextureRect5" type="TextureRect" parent="client review6/Control/Experience/HBoxContainer3" unique_id=822808281]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review7" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review7" parent="." unique_id=1991596916 instance=ExtResource("12_2i6nm")]
 position = Vector2(235, -1516)
 
 [node name="CollisionShape2D" parent="client review7" index="0"]
@@ -690,7 +690,7 @@ text = "Lim did an exceptional job with the game development project, showing to
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review7/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review7/Control/Experience" index="5" unique_id=1187823362]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -715,7 +715,7 @@ offset_right = -122.0
 offset_bottom = -5.0
 texture = ExtResource("25_wvcuw")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review7/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review7/Control/Experience" index="7" unique_id=890576262]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -723,7 +723,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="client review7/Control/Experience" index="8"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="client review7/Control/Experience" index="8" unique_id=94319134]
 layout_mode = 0
 offset_left = -63.0
 offset_top = -230.0
@@ -731,37 +731,37 @@ offset_right = 203.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+[node name="TextureRect" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4" unique_id=590746369]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+[node name="TextureRect2" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4" unique_id=1125557109]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+[node name="TextureRect3" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4" unique_id=1357567140]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+[node name="TextureRect4" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4" unique_id=560652849]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4"]
+[node name="TextureRect5" type="TextureRect" parent="client review7/Control/Experience/HBoxContainer4" unique_id=1618833430]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review2" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review2" parent="." unique_id=224855452 instance=ExtResource("12_2i6nm")]
 position = Vector2(758, -1516)
 
 [node name="CollisionShape2D" parent="client review2" index="0"]
@@ -803,7 +803,7 @@ text = "Lim built a really nice game for us, very happy with the communication a
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review2/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review2/Control/Experience" index="5" unique_id=631348326]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -828,7 +828,7 @@ offset_right = -119.0
 offset_bottom = -2.0
 texture = ExtResource("23_yj1o2")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review2/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review2/Control/Experience" index="7" unique_id=1734155647]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -836,7 +836,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer5" type="HBoxContainer" parent="client review2/Control/Experience" index="8"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="client review2/Control/Experience" index="8" unique_id=569524672]
 layout_mode = 0
 offset_left = -58.0
 offset_top = -230.0
@@ -844,37 +844,37 @@ offset_right = 208.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+[node name="TextureRect" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5" unique_id=834754494]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+[node name="TextureRect2" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5" unique_id=1337887870]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+[node name="TextureRect3" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5" unique_id=469704493]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+[node name="TextureRect4" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5" unique_id=1734048253]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5"]
+[node name="TextureRect5" type="TextureRect" parent="client review2/Control/Experience/HBoxContainer5" unique_id=1406530572]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review3" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review3" parent="." unique_id=666399913 instance=ExtResource("12_2i6nm")]
 position = Vector2(1000, -1516)
 
 [node name="CollisionShape2D" parent="client review3" index="0"]
@@ -916,7 +916,7 @@ text = "Lim did an amazing job creating a game that my users can play while wait
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review3/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review3/Control/Experience" index="5" unique_id=542847250]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -941,7 +941,7 @@ offset_right = -113.0
 offset_bottom = 26.15384
 texture = ExtResource("23_klooi")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review3/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review3/Control/Experience" index="7" unique_id=993415777]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -949,7 +949,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer6" type="HBoxContainer" parent="client review3/Control/Experience" index="8"]
+[node name="HBoxContainer6" type="HBoxContainer" parent="client review3/Control/Experience" index="8" unique_id=938092822]
 layout_mode = 0
 offset_left = -62.0
 offset_top = -230.0
@@ -957,37 +957,37 @@ offset_right = 204.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+[node name="TextureRect" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6" unique_id=1815998031]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+[node name="TextureRect2" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6" unique_id=509989751]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+[node name="TextureRect3" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6" unique_id=885452333]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+[node name="TextureRect4" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6" unique_id=151887032]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6"]
+[node name="TextureRect5" type="TextureRect" parent="client review3/Control/Experience/HBoxContainer6" unique_id=1630706110]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="client review4" parent="." instance=ExtResource("12_2i6nm")]
+[node name="client review4" parent="." unique_id=321432847 instance=ExtResource("12_2i6nm")]
 position = Vector2(887, -1516)
 
 [node name="CollisionShape2D" parent="client review4" index="0"]
@@ -1029,7 +1029,7 @@ text = "I hired Lim to participate in a Fiverr dev game jam for my YouTube chann
 clip_text = true
 text_overrun_behavior = 4
 
-[node name="Label4" type="Label" parent="client review4/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="client review4/Control/Experience" index="5" unique_id=1504704352]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1054,7 +1054,7 @@ offset_right = -85.0
 offset_bottom = 27.01538
 texture = ExtResource("24_klooi")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="client review4/Control/Experience" index="7"]
+[node name="HBoxContainer" type="HBoxContainer" parent="client review4/Control/Experience" index="7" unique_id=343594117]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -1062,7 +1062,7 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="HBoxContainer7" type="HBoxContainer" parent="client review4/Control/Experience" index="8"]
+[node name="HBoxContainer7" type="HBoxContainer" parent="client review4/Control/Experience" index="8" unique_id=2103291718]
 layout_mode = 0
 offset_left = -68.0
 offset_top = -230.0
@@ -1070,47 +1070,47 @@ offset_right = 198.0
 offset_bottom = -180.0
 theme_override_constants/separation = -10
 
-[node name="TextureRect" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+[node name="TextureRect" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7" unique_id=539913413]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+[node name="TextureRect2" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7" unique_id=889193686]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+[node name="TextureRect3" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7" unique_id=2146285491]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect4" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+[node name="TextureRect4" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7" unique_id=1961441466]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TextureRect5" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7"]
+[node name="TextureRect5" type="TextureRect" parent="client review4/Control/Experience/HBoxContainer7" unique_id=1699220072]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 texture = ExtResource("12_paat6")
 expand_mode = 1
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1648506207]
 position = Vector2(-73, -36)
 scale = Vector2(6, 6)
 tile_map_data = PackedByteArray("AAAUAO7/AAABAAMAAAAUAO//AAABAAQAAAAUAPD/AAABAAUAAAAVAO7/AAACAAMAAAAVAO//AAACAAQAAAAVAPD/AAACAAUAAAAWAO7/AAADAAMAAAAWAO//AAADAAQAAAAWAPD/AAADAAUAAAA=")
 tile_set = SubResource("TileSet_mygd7")
 
-[node name="player" parent="." instance=ExtResource("5_soq7o")]
+[node name="player" parent="." unique_id=1179255110 instance=ExtResource("5_soq7o")]
 position = Vector2(82, 700)
 walking = ExtResource("21_crou4")
 
-[node name="sign display" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display" parent="." unique_id=1306923476 instance=ExtResource("12_2i6nm")]
 position = Vector2(1348, 297)
 
 [node name="Label2" parent="sign display/Control/Experience" index="3"]
@@ -1124,7 +1124,7 @@ offset_top = -126.0
 offset_bottom = 22.0
 text = "I was in charge of giving assistance to teach high school students about Data Science for the Data Science Exploration Program initiated by ASEAN foundation. "
 
-[node name="Label4" type="Label" parent="sign display/Control/Experience" index="5"]
+[node name="Label4" type="Label" parent="sign display/Control/Experience" index="5" unique_id=429009949]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1147,7 +1147,7 @@ offset_right = -82.21706
 offset_bottom = -19.722656
 texture = ExtResource("9_urair")
 
-[node name="sign display2" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display2" parent="." unique_id=1837260626 instance=ExtResource("12_2i6nm")]
 position = Vector2(245, 65)
 
 [node name="Label2" parent="sign display2/Control/Experience" index="3"]
@@ -1159,7 +1159,7 @@ text = "I became a software intern at Chumbaka Inc. and I help in creating syste
 [node name="TextureRect" parent="sign display2/Control/Experience" index="5"]
 texture = ExtResource("10_d8vyo")
 
-[node name="Label4" type="Label" parent="sign display2/Control" index="1"]
+[node name="Label4" type="Label" parent="sign display2/Control" index="1" unique_id=1327761570]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1175,7 +1175,7 @@ theme_override_font_sizes/font_size = 15
 text = "21/3/2024 - 30/4/2024"
 autowrap_mode = 2
 
-[node name="sign display3" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display3" parent="." unique_id=1596169028 instance=ExtResource("12_2i6nm")]
 position = Vector2(1051, -181)
 
 [node name="Label2" parent="sign display3/Control/Experience" index="3"]
@@ -1191,7 +1191,7 @@ offset_bottom = -23.0
 texture = ExtResource("12_c053r")
 expand_mode = 2
 
-[node name="Label4" type="Label" parent="sign display3/Control/Experience" index="6"]
+[node name="Label4" type="Label" parent="sign display3/Control/Experience" index="6" unique_id=134153197]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1207,7 +1207,7 @@ theme_override_font_sizes/font_size = 15
 text = "15/5/2024 - 11/6/2025"
 autowrap_mode = 2
 
-[node name="sign display4" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display4" parent="." unique_id=2081591433 instance=ExtResource("12_2i6nm")]
 position = Vector2(1760, -408)
 
 [node name="Label2" parent="sign display4/Control/Experience" index="3"]
@@ -1223,7 +1223,7 @@ offset_right = -137.0
 offset_bottom = 12.0
 texture = ExtResource("13_rj52a")
 
-[node name="Label4" type="Label" parent="sign display4/Control/Experience" index="6"]
+[node name="Label4" type="Label" parent="sign display4/Control/Experience" index="6" unique_id=1675961062]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -1239,7 +1239,7 @@ theme_override_font_sizes/font_size = 15
 text = "1/4/2024 - present"
 autowrap_mode = 2
 
-[node name="sign display5" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display5" parent="." unique_id=1028671581 instance=ExtResource("12_2i6nm")]
 position = Vector2(1098, -726)
 
 [node name="Sprite2D" parent="sign display5" index="1"]
@@ -1269,31 +1269,31 @@ offset_left = -74.0
 offset_top = -227.0
 offset_right = 333.0
 offset_bottom = -184.0
-text = "Expense Flow"
+text = "Elixir"
 
 [node name="Label3" parent="sign display5/Control/Experience" index="4"]
 offset_left = -74.0
 offset_top = -172.0
 offset_right = 287.0
 offset_bottom = -24.0
-text = "A simple and modern expense tracker for everyone."
+text = "An all-in-one personal productivity dashboard designed to streamline task management and scheduling."
 
 [node name="TextureRect" parent="sign display5/Control/Experience" index="5"]
-offset_left = -265.0
-offset_top = -148.0
-offset_right = -119.0
-offset_bottom = -2.0
-texture = ExtResource("16_mkvcy")
+offset_left = -293.48694
+offset_top = -138.0
+offset_right = -95.63153
+offset_bottom = -25.0
+texture = ExtResource("28_uhx82")
 
-[node name="external link button" parent="sign display5/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+[node name="external link button" parent="sign display5/Control/Experience" index="6" unique_id=482853568 instance=ExtResource("17_yl2qr")]
 layout_mode = 0
 offset_left = -56.0
 offset_top = -46.0
 offset_right = 45.0
 offset_bottom = 1.0
-link = "https://www.expenseflow.me/"
+link = "https://elixir-pink-six.vercel.app"
 
-[node name="sign display6" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display6" parent="." unique_id=263940661 instance=ExtResource("12_2i6nm")]
 position = Vector2(379, -1052)
 
 [node name="Sprite2D" parent="sign display6" index="1"]
@@ -1336,7 +1336,7 @@ offset_right = -93.807495
 offset_bottom = -13.0
 texture = ExtResource("18_m5s67")
 
-[node name="external link button" parent="sign display6/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+[node name="external link button" parent="sign display6/Control/Experience" index="6" unique_id=895725999 instance=ExtResource("17_yl2qr")]
 layout_mode = 0
 offset_left = -56.0
 offset_top = -12.0
@@ -1344,7 +1344,7 @@ offset_right = 45.0
 offset_bottom = 35.0
 link = "https://zenogamedev.itch.io/generation-142"
 
-[node name="sign display8" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display8" parent="." unique_id=519539936 instance=ExtResource("12_2i6nm")]
 position = Vector2(634, -1052)
 
 [node name="Sprite2D" parent="sign display8" index="1"]
@@ -1371,14 +1371,14 @@ offset_left = -74.0
 offset_top = -227.0
 offset_right = 333.0
 offset_bottom = -184.0
-text = "REC UM Website"
+text = "3D Magnetic Field Simulator"
 
 [node name="Label3" parent="sign display8/Control/Experience" index="4"]
 offset_left = -74.0
 offset_top = -172.0
 offset_right = 287.0
 offset_bottom = -24.0
-text = "I led the design and development of the Robotics Engineering Community (REC UM) website at the University of Malaya."
+text = "A 3D magnetic field simulation tool utilizing the Godot game engine."
 
 [node name="TextureRect" parent="sign display8/Control/Experience" index="5"]
 offset_left = -288.0
@@ -1387,15 +1387,15 @@ offset_right = -93.807495
 offset_bottom = -13.0
 texture = ExtResource("31_uhx82")
 
-[node name="external link button" parent="sign display8/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+[node name="external link button" parent="sign display8/Control/Experience" index="6" unique_id=1728860996 instance=ExtResource("17_yl2qr")]
 layout_mode = 0
 offset_left = -56.0
 offset_top = -12.0
 offset_right = 45.0
 offset_bottom = 35.0
-link = "https://rec-um.vercel.app/"
+link = "https://technotitanskmkj.itch.io/magnatex-01"
 
-[node name="sign display7" parent="." instance=ExtResource("12_2i6nm")]
+[node name="sign display7" parent="." unique_id=679281504 instance=ExtResource("12_2i6nm")]
 position = Vector2(1413, -1252)
 
 [node name="Sprite2D" parent="sign display7" index="1"]
@@ -1438,7 +1438,7 @@ offset_right = -88.0
 offset_bottom = 14.793655
 texture = ExtResource("19_867yj")
 
-[node name="external link button" parent="sign display7/Control/Experience" index="6" instance=ExtResource("17_yl2qr")]
+[node name="external link button" parent="sign display7/Control/Experience" index="6" unique_id=1059003539 instance=ExtResource("17_yl2qr")]
 layout_mode = 0
 offset_left = -56.0
 offset_top = -12.0
@@ -1446,118 +1446,118 @@ offset_right = 45.0
 offset_bottom = 35.0
 link = "https://zenogamedev.itch.io/light"
 
-[node name="cloud" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud" parent="." unique_id=1856512723 instance=ExtResource("10_bdnb5")]
 position = Vector2(1193, 357)
 
-[node name="cloud2" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud2" parent="." unique_id=140818042 instance=ExtResource("10_bdnb5")]
 position = Vector2(418, 118)
 
-[node name="cloud3" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud3" parent="." unique_id=234423770 instance=ExtResource("10_bdnb5")]
 position = Vector2(1026, -125)
 
-[node name="cloud4" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud4" parent="." unique_id=296415769 instance=ExtResource("10_bdnb5")]
 position = Vector2(1613, -357)
 
-[node name="cloud5" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud5" parent="." unique_id=1908414429 instance=ExtResource("10_bdnb5")]
 position = Vector2(1187, -683)
 
-[node name="cloud6" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud6" parent="." unique_id=1524266925 instance=ExtResource("10_bdnb5")]
 position = Vector2(466, -1006)
 
-[node name="cloud7" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud7" parent="." unique_id=448037280 instance=ExtResource("10_bdnb5")]
 position = Vector2(1244, -1206)
 
-[node name="cloud8" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud8" parent="." unique_id=606027950 instance=ExtResource("10_bdnb5")]
 position = Vector2(1718, -1469)
 
-[node name="cloud9" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud9" parent="." unique_id=1546119104 instance=ExtResource("10_bdnb5")]
 position = Vector2(2142, -1469)
 
-[node name="cloud10" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud10" parent="." unique_id=1295804070 instance=ExtResource("10_bdnb5")]
 position = Vector2(839, -1469)
 
-[node name="cloud11" parent="." instance=ExtResource("10_bdnb5")]
+[node name="cloud11" parent="." unique_id=2142791213 instance=ExtResource("10_bdnb5")]
 position = Vector2(368, -1469)
 
-[node name="Parallax2D6" type="Parallax2D" parent="."]
+[node name="Parallax2D6" type="Parallax2D" parent="." unique_id=1057890388]
 modulate = Color(1, 1, 1, 0.27058825)
 z_index = 3
 scroll_scale = Vector2(1.1, 1.1)
 repeat_size = Vector2(1280, 960)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6" unique_id=1718559144]
 position = Vector2(586.3334, 271)
 scale = Vector2(10, 10)
 texture = ExtResource("5_7dkwi")
 
-[node name="Parallax2D5" type="Parallax2D" parent="."]
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1846176091]
 modulate = Color(1, 1, 1, 0.91764706)
 z_index = 3
 scroll_scale = Vector2(1.2, 1.2)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=1374833509]
 position = Vector2(586.3334, 271)
 scale = Vector2(10, 10)
 texture = ExtResource("6_soq7o")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5"]
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5" unique_id=1349330969]
 position = Vector2(586.3334, 1231)
 scale = Vector2(10, 10)
 texture = ExtResource("7_75p25")
 
-[node name="background graphics2" type="Node2D" parent="."]
+[node name="background graphics2" type="Node2D" parent="." unique_id=1000320370]
 
-[node name="Sprite2D" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D" type="Sprite2D" parent="background graphics2" unique_id=1246408834]
 position = Vector2(-51, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D2" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics2" unique_id=1679662509]
 position = Vector2(385, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D3" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics2" unique_id=1953429259]
 position = Vector2(831, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D4" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics2" unique_id=1911272282]
 position = Vector2(1203, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D5" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics2" unique_id=515711746]
 position = Vector2(1639, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="Sprite2D6" type="Sprite2D" parent="background graphics2"]
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics2" unique_id=1856482228]
 position = Vector2(2085, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
-[node name="wall" type="StaticBody2D" parent="."]
+[node name="wall" type="StaticBody2D" parent="." unique_id=2070632842]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall" unique_id=572959295]
 position = Vector2(-201, 393)
 rotation = 1.5707964
 shape = SubResource("WorldBoundaryShape2D_75p25")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="wall"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="wall" unique_id=139808582]
 position = Vector2(791, 637)
 shape = SubResource("WorldBoundaryShape2D_75p25")
 one_way_collision = true
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="wall"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="wall" unique_id=1550998057]
 position = Vector2(2249, 572)
 rotation = -1.5707964
 shape = SubResource("WorldBoundaryShape2D_75p25")
 
-[node name="next level teleporter" parent="." instance=ExtResource("34_5uag5")]
+[node name="next level teleporter" parent="." unique_id=1755563224 instance=ExtResource("34_5uag5")]
 position = Vector2(2028, -1526)
 next_level_scene = ExtResource("35_mygd7")
 
@@ -1568,9 +1568,9 @@ shape = SubResource("RectangleShape2D_5uag5")
 [node name="ColorRect" parent="next level teleporter/CanvasLayer" index="0"]
 mouse_filter = 2
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=850444217]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=224757226]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1579,13 +1579,11 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
-libraries = {
-&"": SubResource("AnimationLibrary_t7dqo")
-}
-autoplay = "new_animation"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=1228184059]
+libraries/ = SubResource("AnimationLibrary_t7dqo")
+autoplay = &"new_animation"
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=361242542]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = 8
 anchor_left = 0.5
@@ -1604,7 +1602,7 @@ text = "Chapter 3:
 My Experiences"
 horizontal_alignment = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=536971466]
 stream = ExtResource("38_p115l")
 autoplay = true
 

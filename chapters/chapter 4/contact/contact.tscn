@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bvrcgyym7ot4y"]
+[gd_scene format=3 uid="uid://bvrcgyym7ot4y"]
 
 [ext_resource type="Texture2D" uid="uid://dkp4bjwtluev6" path="res://chapters/chapter 4/contact/contact board.png" id="1_pf6xr"]
 [ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="2_y46an"]
 [ext_resource type="Texture2D" uid="uid://sey3108uvp2" path="res://chapters/chapter 4/contact/gmail.webp" id="3_cep3h"]
+[ext_resource type="Script" uid="uid://bivuj76nsbo2n" path="res://chapters/chapter 4/auto_update_year.gd" id="3_p2sh6"]
 [ext_resource type="Script" uid="uid://cryb0xlagpiq1" path="res://chapters/chapter 4/contact/button.gd" id="4_rwom5"]
 [ext_resource type="Texture2D" uid="uid://c8b65bqfkremw" path="res://chapters/chapter 3/images/fiverr.webp" id="5_aai3d"]
 [ext_resource type="Texture2D" uid="uid://cod7s4bu34r64" path="res://chapters/chapter 4/contact/instagram.png" id="6_2bgxu"]
@@ -70,9 +71,9 @@ _data = {
 &"show contact": SubResource("Animation_jresk")
 }
 
-[node name="contact" type="CanvasLayer"]
+[node name="contact" type="CanvasLayer" unique_id=767258644]
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=2116526121]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 8
@@ -88,7 +89,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.2, 0.2)
 
-[node name="TextureRect" type="TextureRect" parent="Control"]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1776374611]
 modulate = Color(0.5729883, 0.5729883, 0.5729883, 1)
 layout_mode = 1
 anchors_preset = 8
@@ -105,7 +106,7 @@ grow_vertical = 2
 texture = ExtResource("1_pf6xr")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="Control"]
+[node name="Label" type="Label" parent="Control" unique_id=454789222]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -123,7 +124,7 @@ theme_override_font_sizes/font_size = 30
 text = "Congratulations! You Have Obtained:"
 horizontal_alignment = 1
 
-[node name="Label3" type="Label" parent="Control"]
+[node name="Label3" type="Label" parent="Control" unique_id=517700356]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -140,8 +141,9 @@ theme_override_fonts/font = ExtResource("2_y46an")
 theme_override_font_sizes/font_size = 15
 text = "© 2025 limweijen. All rights reserved."
 horizontal_alignment = 1
+script = ExtResource("3_p2sh6")
 
-[node name="Label2" type="Label" parent="Control"]
+[node name="Label2" type="Label" parent="Control" unique_id=1473854852]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -160,7 +162,7 @@ text = "Lim Wei Jen's
 Contact Info"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="Control" parent="Control"]
+[node name="HBoxContainer" type="Control" parent="Control" unique_id=1016500849]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -174,7 +176,7 @@ offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control/HBoxContainer"]
+[node name="Button" type="Button" parent="Control/HBoxContainer" unique_id=334564344]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_right = 100.0
@@ -186,7 +188,7 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "mailto:limweijen96@gmail.com"
 
-[node name="Button2" type="Button" parent="Control/HBoxContainer"]
+[node name="Button2" type="Button" parent="Control/HBoxContainer" unique_id=1222894093]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_left = 120.0
@@ -199,7 +201,7 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://www.fiverr.com/limweijen?public_mode=true"
 
-[node name="Button3" type="Button" parent="Control/HBoxContainer"]
+[node name="Button3" type="Button" parent="Control/HBoxContainer" unique_id=272552523]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_left = 240.0
@@ -212,7 +214,7 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://www.instagram.com/limweijen96/"
 
-[node name="Button4" type="Button" parent="Control/HBoxContainer"]
+[node name="Button4" type="Button" parent="Control/HBoxContainer" unique_id=1430407545]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_left = 360.0
@@ -225,7 +227,7 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://github.com/LimWeiJen"
 
-[node name="Button5" type="Button" parent="Control/HBoxContainer"]
+[node name="Button5" type="Button" parent="Control/HBoxContainer" unique_id=594780482]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_left = 480.0
@@ -238,7 +240,7 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://www.linkedin.com/in/lim-wei-jen-13524a200/"
 
-[node name="Button6" type="Button" parent="Control/HBoxContainer"]
+[node name="Button6" type="Button" parent="Control/HBoxContainer" unique_id=891008232]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_left = 600.0
@@ -251,10 +253,8 @@ expand_icon = true
 script = ExtResource("4_rwom5")
 link = "https://limweijen-text.vercel.app/resume.pdf"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_8tk17")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=521698283]
+libraries/ = SubResource("AnimationLibrary_8tk17")
 
 [connection signal="pressed" from="Control/HBoxContainer/Button" to="Control/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="Control/HBoxContainer/Button2" to="Control/HBoxContainer/Button2" method="_on_pressed"]
