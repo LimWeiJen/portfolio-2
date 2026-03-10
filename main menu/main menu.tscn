@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dtree0r0c10uf"]
+[gd_scene format=3 uid="uid://dtree0r0c10uf"]
 
 [ext_resource type="Texture2D" uid="uid://ipb311v4n477" path="res://chapters/chapter 1/environment sprites/background.png" id="1_5bngd"]
 [ext_resource type="Script" uid="uid://co13r6nkbtgmb" path="res://main menu/main_menu.gd" id="1_vltye"]
@@ -257,67 +257,78 @@ _data = {
 &"show notice": SubResource("Animation_im45v")
 }
 
-[node name="main menu" type="Node2D"]
+[sub_resource type="Environment" id="Environment_o30qs"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.82
+glow_bloom = 0.89
+glow_hdr_threshold = 4.0
+glow_hdr_scale = 4.0
+glow_hdr_luminance_cap = 14.32
+adjustment_enabled = true
+adjustment_brightness = 0.8
+
+[node name="main menu" type="Node2D" unique_id=186292590]
 script = ExtResource("1_vltye")
 
-[node name="Parallax2D" type="Parallax2D" parent="."]
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=681314422]
 repeat_size = Vector2(1280, 960)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1445239675]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("1_5bngd")
 
-[node name="Parallax2D4" type="Parallax2D" parent="."]
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1589257234]
 scroll_scale = Vector2(0.1, 0.1)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=2053855356]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("2_vltye")
 
-[node name="Parallax2D3" type="Parallax2D" parent="."]
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=348106443]
 scroll_scale = Vector2(0.3, 0.3)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=1994667416]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("3_uef0c")
 
-[node name="Parallax2D2" type="Parallax2D" parent="."]
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=1620462193]
 scroll_scale = Vector2(0.6, 0.6)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=2105071726]
 position = Vector2(586.3334, 338.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("4_8s3e4")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1254264021]
 
-[node name="Parallax2D6" type="Parallax2D" parent="."]
+[node name="Parallax2D6" type="Parallax2D" parent="." unique_id=21444753]
 modulate = Color(1, 1, 1, 0.27058825)
 scroll_scale = Vector2(1.1, 1.1)
 repeat_size = Vector2(1280, 960)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6" unique_id=1033334958]
 position = Vector2(586.3334, 271)
 scale = Vector2(10, 10)
 texture = ExtResource("6_1m6bl")
 
-[node name="Parallax2D7" type="Parallax2D" parent="."]
+[node name="Parallax2D7" type="Parallax2D" parent="." unique_id=610512852]
 modulate = Color(1, 1, 1, 0.9098039)
 scroll_scale = Vector2(0.5, 0.5)
 repeat_times = 10
 
-[node name="Label" type="Label" parent="Parallax2D7"]
+[node name="Label" type="Label" parent="Parallax2D7" unique_id=1936698447]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -333,13 +344,13 @@ theme_override_fonts/font = ExtResource("7_o30qs")
 theme_override_font_sizes/font_size = 150
 horizontal_alignment = 1
 
-[node name="Parallax2D8" type="Parallax2D" parent="."]
+[node name="Parallax2D8" type="Parallax2D" parent="." unique_id=537991554]
 modulate = Color(1, 1, 1, 0.41960785)
 scroll_scale = Vector2(0.505, 0.505)
 scroll_offset = Vector2(109, 0)
 repeat_times = 10
 
-[node name="Label" type="Label" parent="Parallax2D8"]
+[node name="Label" type="Label" parent="Parallax2D8" unique_id=280685123]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -355,12 +366,12 @@ theme_override_fonts/font = ExtResource("7_o30qs")
 theme_override_font_sizes/font_size = 150
 horizontal_alignment = 1
 
-[node name="Parallax2D9" type="Parallax2D" parent="."]
+[node name="Parallax2D9" type="Parallax2D" parent="." unique_id=336156231]
 scroll_scale = Vector2(0.5, 0.5)
 scroll_offset = Vector2(0, 20)
 repeat_times = 10
 
-[node name="Button" type="Button" parent="Parallax2D9"]
+[node name="Button" type="Button" parent="Parallax2D9" unique_id=212701436]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = 8
 anchor_left = 0.5
@@ -379,7 +390,7 @@ theme_override_font_sizes/font_size = 80
 text = "BEGIN"
 flat = true
 
-[node name="PanelContainer" type="PanelContainer" parent="Parallax2D9/Button"]
+[node name="PanelContainer" type="PanelContainer" parent="Parallax2D9/Button" unique_id=1025929006]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -390,30 +401,28 @@ scale = Vector2(1e-05, 1)
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_bswgn")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Parallax2D9"]
-libraries = {
-&"": SubResource("AnimationLibrary_o30qs")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Parallax2D9" unique_id=1138269904]
+libraries/ = SubResource("AnimationLibrary_o30qs")
 
-[node name="Parallax2D5" type="Parallax2D" parent="."]
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1238937243]
 modulate = Color(1, 1, 1, 0.91764706)
 scroll_scale = Vector2(1.2, 1.2)
 repeat_size = Vector2(1280, 0)
 repeat_times = 10
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5"]
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=245919701]
 position = Vector2(586.3334, 271)
 scale = Vector2(10, 10)
 texture = ExtResource("7_bswgn")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5"]
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5" unique_id=990440998]
 position = Vector2(586.3334, 1231)
 scale = Vector2(10, 10)
 texture = ExtResource("8_o30qs")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=224020083]
 
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=694274338]
 modulate = Color(1, 1, 1, 0)
 anchors_preset = 15
 anchor_right = 1.0
@@ -422,7 +431,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1330656907]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 8
@@ -438,7 +447,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.2, 0.2)
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control" unique_id=1319211723]
 modulate = Color(0.8819366, 0.8819366, 0.88193655, 1)
 layout_mode = 1
 anchors_preset = 8
@@ -456,7 +465,7 @@ mouse_filter = 2
 texture = ExtResource("10_kv1ht")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
+[node name="Label" type="Label" parent="CanvasLayer/Control" unique_id=1900207422]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -478,7 +487,7 @@ Otherwise... let's begin!"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Label2" type="Label" parent="CanvasLayer/Control"]
+[node name="Label2" type="Label" parent="CanvasLayer/Control" unique_id=1948861886]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -497,7 +506,7 @@ theme_override_font_sizes/font_size = 60
 text = "Welcome!"
 horizontal_alignment = 1
 
-[node name="ready button" type="Button" parent="CanvasLayer/Control"]
+[node name="ready button" type="Button" parent="CanvasLayer/Control" unique_id=716107520]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -518,7 +527,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_noelm")
 text = "I'm Ready"
 flat = true
 
-[node name="text version button" type="Button" parent="CanvasLayer/Control"]
+[node name="text version button" type="Button" parent="CanvasLayer/Control" unique_id=1544132790]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -537,7 +546,7 @@ theme_override_font_sizes/font_size = 30
 text = "text version"
 flat = true
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=922817497]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -546,7 +555,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Mobile Notice" type="Control" parent="CanvasLayer"]
+[node name="Mobile Notice" type="Control" parent="CanvasLayer" unique_id=923375939]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -554,7 +563,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Mobile Notice"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Mobile Notice" unique_id=1793047191]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -564,7 +573,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0.7490196, 0.5529412, 0.3529412, 1)
 
-[node name="Label" type="Label" parent="CanvasLayer/Mobile Notice"]
+[node name="Label" type="Label" parent="CanvasLayer/Mobile Notice" unique_id=1628605393]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -586,7 +595,7 @@ If you’re on mobile, feel free to check out the quick text version instead —
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="Label2" type="Label" parent="CanvasLayer/Mobile Notice"]
+[node name="Label2" type="Label" parent="CanvasLayer/Mobile Notice" unique_id=946705691]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -606,7 +615,7 @@ text = "Mobile Notice"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="text version button" type="Button" parent="CanvasLayer/Mobile Notice"]
+[node name="text version button" type="Button" parent="CanvasLayer/Mobile Notice" unique_id=1048193222]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -625,11 +634,12 @@ theme_override_font_sizes/font_size = 40
 text = "text version"
 flat = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
-libraries = {
-&"": SubResource("AnimationLibrary_18t1u")
-}
-autoplay = "new_animation"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=623880747]
+libraries/ = SubResource("AnimationLibrary_18t1u")
+autoplay = &"new_animation"
+
+[node name="WorldEnvironment2" type="WorldEnvironment" parent="." unique_id=438322611]
+environment = SubResource("Environment_o30qs")
 
 [connection signal="mouse_entered" from="Parallax2D9/Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Parallax2D9/Button" to="." method="_on_button_mouse_exited"]

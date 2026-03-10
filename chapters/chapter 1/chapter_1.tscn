@@ -240,6 +240,17 @@ _data = {
 &"new_animation": SubResource("Animation_jddgd")
 }
 
+[sub_resource type="Environment" id="Environment_jojiu"]
+background_mode = 3
+glow_enabled = true
+glow_intensity = 0.82
+glow_bloom = 0.89
+glow_hdr_threshold = 4.0
+glow_hdr_scale = 4.0
+glow_hdr_luminance_cap = 14.32
+adjustment_enabled = true
+adjustment_brightness = 0.8
+
 [node name="chapter 1" type="Node2D" unique_id=1121249099]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=2057430324]
@@ -499,6 +510,9 @@ horizontal_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=803522214]
 stream = ExtResource("18_jojiu")
 autoplay = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1769252638]
+environment = SubResource("Environment_jojiu")
 
 [editable path="npc2"]
 [editable path="npc3"]

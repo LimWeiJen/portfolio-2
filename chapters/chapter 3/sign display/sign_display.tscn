@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bkqm7cub82atg"]
+[gd_scene format=3 uid="uid://bkqm7cub82atg"]
 
 [ext_resource type="Script" uid="uid://dsihit1e41d4i" path="res://chapters/chapter 3/sign display/sign_display.gd" id="1_kdflh"]
 [ext_resource type="Texture2D" uid="uid://ck3kssr0sbifj" path="res://chapters/chapter 3/sign sprites/tree.png" id="1_skxsn"]
@@ -95,18 +95,18 @@ _data = {
 &"show sign": SubResource("Animation_kntp6")
 }
 
-[node name="sign display" type="Area2D"]
+[node name="sign display" type="Area2D" unique_id=406195968]
 script = ExtResource("1_kdflh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1867756564]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_lbtcc")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1999826556]
 scale = Vector2(6, 6)
 texture = ExtResource("1_skxsn")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=2131846734]
 z_index = 2
 layout_mode = 3
 anchors_preset = 5
@@ -118,12 +118,13 @@ offset_right = 20.0
 offset_bottom = -91.0
 grow_horizontal = 2
 
-[node name="Experience" type="Control" parent="Control"]
+[node name="Experience" type="Control" parent="Control" unique_id=46098346]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TextureRect2" type="TextureRect" parent="Control/Experience"]
+[node name="TextureRect2" type="TextureRect" parent="Control/Experience" unique_id=265460178]
+modulate = Color(0.28527766, 0.38752258, 0.83690065, 1)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -135,7 +136,7 @@ offset_bottom = 86.0
 grow_horizontal = 2
 texture = ExtResource("5_ggnk7")
 
-[node name="TextureRect3" type="TextureRect" parent="Control/Experience"]
+[node name="TextureRect3" type="TextureRect" parent="Control/Experience" unique_id=5072343]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -149,7 +150,7 @@ rotation = -0.09438476
 texture = ExtResource("4_b14rb")
 expand_mode = 1
 
-[node name="Label" type="Label" parent="Control/Experience"]
+[node name="Label" type="Label" parent="Control/Experience" unique_id=1096803699]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -165,7 +166,7 @@ theme_override_fonts/font = ExtResource("3_y6td0")
 theme_override_font_sizes/font_size = 30
 text = "Experience"
 
-[node name="Label2" type="Label" parent="Control/Experience"]
+[node name="Label2" type="Label" parent="Control/Experience" unique_id=897516747]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -180,7 +181,7 @@ theme_override_fonts/font = ExtResource("3_y6td0")
 theme_override_font_sizes/font_size = 30
 text = "Intern in Chumbaka Inc"
 
-[node name="Label3" type="Label" parent="Control/Experience"]
+[node name="Label3" type="Label" parent="Control/Experience" unique_id=1655257337]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -196,7 +197,7 @@ theme_override_font_sizes/font_size = 20
 text = "Created systems for workforce organization"
 autowrap_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Control/Experience"]
+[node name="TextureRect" type="TextureRect" parent="Control/Experience" unique_id=1993673459]
 layout_mode = 0
 offset_left = -281.0
 offset_top = -141.0
@@ -205,10 +206,8 @@ offset_bottom = 34.0
 texture = ExtResource("4_1jdwc")
 expand_mode = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_ax1nr")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=150629830]
+libraries/ = SubResource("AnimationLibrary_ax1nr")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
