@@ -16,7 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://dwqw33xowp67x" path="res://chapters/chapter 4/npc sprites/lim wei jen idle.png" id="12_t45py"]
 [ext_resource type="FontFile" uid="uid://231c8iuwhd1b" path="res://Poppins/Poppins-Black.ttf" id="14_r3vtx"]
 [ext_resource type="PackedScene" uid="uid://bvrcgyym7ot4y" path="res://chapters/chapter 4/contact/contact.tscn" id="15_jrbs3"]
-[ext_resource type="AudioStream" uid="uid://1kdvt0of2n8o" path="res://player/sound effects/midnight-sound-effect-199863.mp3" id="17_l8euw"]
+[ext_resource type="PackedScene" uid="uid://cnl86hy3tlekl" path="res://mute button/mute_button.tscn" id="16_lk4v3"]
+[ext_resource type="AudioStream" uid="uid://r2fdtb434yo6" path="res://player/sound effects/Empty Room Ambient Noise Sound Effect.mp3" id="17_l8euw"]
+[ext_resource type="AudioStream" uid="uid://cicayomfnxpjy" path="res://chapters/chapter 4/music/[FREE] Emotional Piano Ballad Type Beat - Burden.mp3" id="18_hnwno"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l56qg"]
 texture = ExtResource("2_o1ef6")
@@ -421,6 +423,8 @@ autoplay = "default"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=209561842]
 
+[node name="mute button" parent="CanvasLayer" unique_id=859482946 instance=ExtResource("16_lk4v3")]
+
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1882154480]
 anchors_preset = 15
 anchor_right = 1.0
@@ -457,6 +461,11 @@ horizontal_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1420696052]
 stream = ExtResource("17_l8euw")
+volume_db = 12.0
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=2002517961]
+stream = ExtResource("18_hnwno")
 autoplay = true
 
 [node name="WorldEnvironment2" type="WorldEnvironment" parent="." unique_id=526775642]

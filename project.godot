@@ -18,7 +18,7 @@ config/name="LimWeiJen"
 run/main_scene="uid://dtree0r0c10uf"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-boot_splash/show_image=false
+boot_splash/image="uid://bllrd8hu501bh"
 config/icon="uid://btvb8a8subt1k"
 
 [input]
@@ -67,3 +67,4 @@ textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 environment/glow/upscale_mode=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

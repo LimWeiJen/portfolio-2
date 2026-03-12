@@ -38,8 +38,9 @@
 [ext_resource type="Texture2D" uid="uid://btvp3uwoev8sh" path="res://chapters/chapter 1/environment sprites/tilemap.png" id="33_1gt7a"]
 [ext_resource type="PackedScene" uid="uid://cxog5psgyyt40" path="res://next level teleporter/next_level_teleporter.tscn" id="34_5uag5"]
 [ext_resource type="PackedScene" uid="uid://ce88y1pevtcre" path="res://chapters/chapter 4/chapter_4.tscn" id="35_mygd7"]
-[ext_resource type="AudioStream" uid="uid://dcbrpysnr8j5x" path="res://player/sound effects/ambient-nature-with-birds-75766.mp3" id="38_p115l"]
+[ext_resource type="AudioStream" uid="uid://1kdvt0of2n8o" path="res://player/sound effects/midnight-sound-effect-199863.mp3" id="40_0b1op"]
 [ext_resource type="Shader" uid="uid://brspyheiawp8s" path="res://chapters/chapter 3/chapter_3.gdshader" id="40_fm1vr"]
+[ext_resource type="AudioStream" uid="uid://clkctau1ydmdx" path="res://chapters/chapter 3/music/Slow Dreamy Ambient Pads Background Music For Filmmakers & Content Creators.mp3" id="41_0b1op"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0b1op"]
 shader = ExtResource("40_fm1vr")
@@ -1609,6 +1610,11 @@ position = Vector2(-51, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics2" unique_id=1003677027]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
 [node name="Sprite2D2" type="Sprite2D" parent="background graphics2" unique_id=1679662509]
 position = Vector2(385, 419)
 scale = Vector2(6, 6)
@@ -1634,6 +1640,942 @@ position = Vector2(2085, 419)
 scale = Vector2(6, 6)
 texture = ExtResource("9_75p25")
 
+[node name="background graphics3" type="Node2D" parent="." unique_id=825536106]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 44)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics3" unique_id=687325251]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics3" unique_id=956638454]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics3" unique_id=111560257]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics3" unique_id=163941257]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics3" unique_id=1537135568]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics3" unique_id=838824351]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics3" unique_id=1249457523]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics4" type="Node2D" parent="." unique_id=773723420]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 44)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics4" unique_id=479409794]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics4" unique_id=507812745]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics4" unique_id=2025912420]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics4" unique_id=1981303417]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics4" unique_id=774146407]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics4" unique_id=2114641340]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics4" unique_id=1311130671]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics5" type="Node2D" parent="." unique_id=1522768716]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 98)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics5" unique_id=2117616608]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics5" unique_id=711905436]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics5" unique_id=104388583]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics5" unique_id=393443051]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics5" unique_id=1221207458]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics5" unique_id=538810034]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics5" unique_id=423016422]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics6" type="Node2D" parent="." unique_id=1872599000]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 98)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics6" unique_id=756039336]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics6" unique_id=253195905]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics6" unique_id=169882039]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics6" unique_id=679613571]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics6" unique_id=421304489]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics6" unique_id=997273950]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics6" unique_id=1883244584]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics7" type="Node2D" parent="." unique_id=812570925]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 147)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics7" unique_id=2012634125]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics7" unique_id=492128861]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics7" unique_id=2004857351]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics7" unique_id=1047272066]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics7" unique_id=881742090]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics7" unique_id=1361795352]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics7" unique_id=927083767]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics8" type="Node2D" parent="." unique_id=1677767910]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 147)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics8" unique_id=187967018]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics8" unique_id=306466781]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics8" unique_id=733429815]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics8" unique_id=1947936373]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics8" unique_id=509905569]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics8" unique_id=1966387044]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics8" unique_id=1971714437]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics9" type="Node2D" parent="." unique_id=1196873575]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 209)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics9" unique_id=346414999]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics9" unique_id=1240033780]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics9" unique_id=492214041]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics9" unique_id=2069184278]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics9" unique_id=408140615]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics9" unique_id=575447780]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics9" unique_id=1306564473]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics10" type="Node2D" parent="." unique_id=388778549]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 209)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics10" unique_id=919901289]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics10" unique_id=1987560738]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics10" unique_id=752909805]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics10" unique_id=613020077]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics10" unique_id=441219596]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics10" unique_id=648532255]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics10" unique_id=1547971163]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics11" type="Node2D" parent="." unique_id=1042532793]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 240)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics11" unique_id=393687004]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics11" unique_id=723424156]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics11" unique_id=1577870997]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics11" unique_id=633383901]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics11" unique_id=573828463]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics11" unique_id=1636286922]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics11" unique_id=190299774]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics12" type="Node2D" parent="." unique_id=1407048964]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 240)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics12" unique_id=2107941216]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics12" unique_id=1864570391]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics12" unique_id=391494955]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics12" unique_id=446545380]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics12" unique_id=1057612455]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics12" unique_id=1449579219]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics12" unique_id=261479409]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics13" type="Node2D" parent="." unique_id=1696613045]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 289)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics13" unique_id=1024124386]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics13" unique_id=672718047]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics13" unique_id=1745273567]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics13" unique_id=1541035006]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics13" unique_id=1538080266]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics13" unique_id=2056549988]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics13" unique_id=2126931334]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics14" type="Node2D" parent="." unique_id=1935471166]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 289)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics14" unique_id=193161232]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics14" unique_id=1317670066]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics14" unique_id=531846165]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics14" unique_id=1910502910]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics14" unique_id=346323483]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics14" unique_id=1384338128]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics14" unique_id=1744141987]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics15" type="Node2D" parent="." unique_id=1161158542]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 347)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics15" unique_id=688162697]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics15" unique_id=1121962469]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics15" unique_id=840751774]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics15" unique_id=1489293085]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics15" unique_id=1956001562]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics15" unique_id=795335580]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics15" unique_id=1404060873]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics16" type="Node2D" parent="." unique_id=1435462531]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 347)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics16" unique_id=734292723]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics16" unique_id=2112937122]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics16" unique_id=2082829292]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics16" unique_id=1356241220]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics16" unique_id=1610362333]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics16" unique_id=1748553772]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics16" unique_id=1800160340]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics17" type="Node2D" parent="." unique_id=691241852]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 378)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics17" unique_id=795138939]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics17" unique_id=736326678]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics17" unique_id=800406397]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics17" unique_id=2005564434]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics17" unique_id=1674402471]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics17" unique_id=977864889]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics17" unique_id=497948640]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics18" type="Node2D" parent="." unique_id=1144653689]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 378)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics18" unique_id=1213759108]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics18" unique_id=714558042]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics18" unique_id=72820824]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics18" unique_id=383808475]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics18" unique_id=1923170515]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics18" unique_id=1182169487]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics18" unique_id=509826623]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics19" type="Node2D" parent="." unique_id=1248615616]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 436)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics19" unique_id=1675435946]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics19" unique_id=1212470751]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics19" unique_id=1797929327]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics19" unique_id=583346454]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics19" unique_id=1239507881]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics19" unique_id=827242845]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics19" unique_id=970006797]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics20" type="Node2D" parent="." unique_id=1685048453]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 436)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics20" unique_id=1320820011]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics20" unique_id=1764532342]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics20" unique_id=675771458]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics20" unique_id=1442539202]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics20" unique_id=787074457]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics20" unique_id=1901006271]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics20" unique_id=333556956]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics21" type="Node2D" parent="." unique_id=1119569946]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics21" unique_id=1749179650]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics21" unique_id=41746721]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics21" unique_id=750849901]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics21" unique_id=269872651]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics21" unique_id=1843855417]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics21" unique_id=383074294]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics21" unique_id=1155416212]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics22" type="Node2D" parent="." unique_id=732811470]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics22" unique_id=467826851]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics22" unique_id=978369304]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics22" unique_id=626536166]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics22" unique_id=713881746]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics22" unique_id=1291164011]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics22" unique_id=1628297095]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics22" unique_id=528984026]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics23" type="Node2D" parent="." unique_id=1230099385]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 511)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics23" unique_id=782715827]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics23" unique_id=1342062138]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics23" unique_id=1177544436]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics23" unique_id=1886965183]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics23" unique_id=1859468863]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics23" unique_id=1800154570]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics23" unique_id=717155274]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics24" type="Node2D" parent="." unique_id=899106331]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 511)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics24" unique_id=1001927995]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics24" unique_id=523878158]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics24" unique_id=1366074891]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics24" unique_id=2085412938]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics24" unique_id=450175429]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics24" unique_id=963071053]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics24" unique_id=559892995]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics25" type="Node2D" parent="." unique_id=1564497841]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(-698, 569)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics25" unique_id=650969996]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics25" unique_id=1856511237]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics25" unique_id=706774746]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics25" unique_id=1203653776]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics25" unique_id=441109257]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics25" unique_id=412748303]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics25" unique_id=1781642605]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="background graphics26" type="Node2D" parent="." unique_id=714733994]
+modulate = Color(1, 0.4862745, 0.85490197, 1)
+position = Vector2(877, 569)
+
+[node name="Sprite2D" type="Sprite2D" parent="background graphics26" unique_id=22292656]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D7" type="Sprite2D" parent="background graphics26" unique_id=1847892185]
+position = Vector2(-51, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D2" type="Sprite2D" parent="background graphics26" unique_id=194158178]
+position = Vector2(385, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D3" type="Sprite2D" parent="background graphics26" unique_id=478372254]
+position = Vector2(831, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D4" type="Sprite2D" parent="background graphics26" unique_id=247230632]
+position = Vector2(1203, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D5" type="Sprite2D" parent="background graphics26" unique_id=53605067]
+position = Vector2(1639, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
+[node name="Sprite2D6" type="Sprite2D" parent="background graphics26" unique_id=935013215]
+position = Vector2(2085, 419)
+scale = Vector2(6, 6)
+texture = ExtResource("9_75p25")
+
 [node name="wall" type="StaticBody2D" parent="." unique_id=2070632842]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall" unique_id=572959295]
@@ -1653,14 +2595,12 @@ shape = SubResource("WorldBoundaryShape2D_75p25")
 
 [node name="next level teleporter" parent="." unique_id=1755563224 instance=ExtResource("34_5uag5")]
 position = Vector2(2028, -1526)
+mute_volume = -25
 next_level_scene = ExtResource("35_mygd7")
 
-[node name="CollisionShape2D" parent="next level teleporter" index="0"]
+[node name="CollisionShape2D" parent="next level teleporter" index="0" unique_id=167212095]
 position = Vector2(-25, 8)
 shape = SubResource("RectangleShape2D_5uag5")
-
-[node name="ColorRect" parent="next level teleporter/CanvasLayer" index="0"]
-mouse_filter = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=850444217]
 
@@ -1697,7 +2637,12 @@ My Experiences"
 horizontal_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=536971466]
-stream = ExtResource("38_p115l")
+stream = ExtResource("40_0b1op")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1008540076]
+stream = ExtResource("41_0b1op")
+volume_db = -5.0
 autoplay = true
 
 [node name="WorldEnvironment2" type="WorldEnvironment" parent="." unique_id=1711981192]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cicayomfnxpjy"
+path="res://.godot/imported/[FREE] Emotional Piano Ballad Type Beat - Burden.mp3-8a3955306e274197ab085e2bec5fe720.mp3str"
+
+[deps]
+
+source_file="res://chapters/chapter 4/music/[FREE] Emotional Piano Ballad Type Beat - Burden.mp3"
+dest_files=["res://.godot/imported/[FREE] Emotional Piano Ballad Type Beat - Burden.mp3-8a3955306e274197ab085e2bec5fe720.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

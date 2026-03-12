@@ -25,6 +25,7 @@
 [ext_resource type="AudioStream" uid="uid://bu826jm08jpla" path="res://player/sound effects/walking-for-cartoon-1-7148.mp3" id="21_n8jlt"]
 [ext_resource type="PackedScene" uid="uid://cvj0ukncyb5pa" path="res://chapters/chapter 3/chapter_3.tscn" id="22_o8wi0"]
 [ext_resource type="AudioStream" uid="uid://duo4hyiumr8ln" path="res://player/sound effects/ambient-noise-52387.mp3" id="24_vv6m2"]
+[ext_resource type="AudioStream" uid="uid://csrf1itmo4gyr" path="res://chapters/chapter 2/music/Dennennaalden - RoccoW Chiptune [No Copyright Music].mp3" id="26_nhlpk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uynys"]
 size = Vector2(90.25, 72)
@@ -801,9 +802,10 @@ walking = ExtResource("21_n8jlt")
 
 [node name="next level teleporter" parent="." unique_id=1096213472 instance=ExtResource("21_4hcmd")]
 position = Vector2(3289, -433)
+mute_volume = -38
 next_level_scene = ExtResource("22_o8wi0")
 
-[node name="CollisionShape2D" parent="next level teleporter" index="0"]
+[node name="CollisionShape2D" parent="next level teleporter" index="0" unique_id=167212095]
 position = Vector2(21.5, -60.5)
 shape = SubResource("RectangleShape2D_o8wi0")
 
@@ -815,6 +817,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=1418467673]
@@ -843,6 +846,11 @@ horizontal_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1018972169]
 stream = ExtResource("24_vv6m2")
 volume_db = -10.0
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=2051480102]
+stream = ExtResource("26_nhlpk")
+volume_db = -15.0
 autoplay = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1244149395]

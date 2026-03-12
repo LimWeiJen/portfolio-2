@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cnl86hy3tlekl"]
+
+[ext_resource type="Texture2D" uid="uid://c1ykg5tj1ijia" path="res://mute button/speaker-off.svg" id="1_d8beq"]
+[ext_resource type="Script" uid="uid://bmks05qnmuttd" path="res://mute button/mute_button.gd" id="2_uv3tb"]
+[ext_resource type="Texture2D" uid="uid://blyt6d0gdnnjj" path="res://mute button/speaker.svg" id="3_mvbyv"]
+
+[node name="mute button" type="TextureButton" unique_id=859482946]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 94.0
+offset_bottom = 94.0
+texture_normal = ExtResource("1_d8beq")
+texture_pressed = ExtResource("1_d8beq")
+texture_hover = ExtResource("1_d8beq")
+texture_disabled = ExtResource("1_d8beq")
+texture_focused = ExtResource("1_d8beq")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_uv3tb")
+mute_texture = ExtResource("3_mvbyv")
+unmute_texture = ExtResource("1_d8beq")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

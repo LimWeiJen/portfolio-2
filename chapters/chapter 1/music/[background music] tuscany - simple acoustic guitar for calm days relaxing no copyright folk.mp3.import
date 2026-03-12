@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://oc7mba6eym3l"
+path="res://.godot/imported/[background music] tuscany - simple acoustic guitar for calm days relaxing no copyright folk.mp3-a40c851e844e4e39efd333116f5b98f4.mp3str"
+
+[deps]
+
+source_file="res://chapters/chapter 1/music/[background music] tuscany - simple acoustic guitar for calm days relaxing no copyright folk.mp3"
+dest_files=["res://.godot/imported/[background music] tuscany - simple acoustic guitar for calm days relaxing no copyright folk.mp3-a40c851e844e4e39efd333116f5b98f4.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

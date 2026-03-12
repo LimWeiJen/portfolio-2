@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cxog5psgyyt40" path="res://next level teleporter/next_level_teleporter.tscn" id="16_jddgd"]
 [ext_resource type="PackedScene" uid="uid://c84s6iru81fqd" path="res://chapters/chapter 2/chapter_2.tscn" id="17_t7dqo"]
 [ext_resource type="AudioStream" uid="uid://dqwn8gqq034qd" path="res://player/sound effects/forest-wind-with-birds-singing-364368.mp3" id="18_jojiu"]
+[ext_resource type="AudioStream" uid="uid://oc7mba6eym3l" path="res://chapters/chapter 1/music/[background music] tuscany - simple acoustic guitar for calm days relaxing no copyright folk.mp3" id="19_keibd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ej2fq"]
 animations = [{
@@ -370,7 +371,7 @@ position = Vector2(588, 384)
 
 [node name="npc" parent="." unique_id=1636396344 node_paths=PackedStringArray("multiple_labels") instance=ExtResource("10_pdrt4")]
 position = Vector2(5122, 342)
-dialogue = Array[String](["0:And that is why I always brew my coffee before brushing my teeth!", "0:Oh! Hello there stranger, who are you?", "p:I'm a recruiter. I'm looking for someone named Lim Wei Jen. Do you know him?", "0:That name does ring a bell.", "1:Yea, that's the guy that invents random stuff every day right?", "0:You're giving him credit by calling it inventions.", "0:I heard he built a whole game world... just to test a single jump button!", "1:Shut up. I once heard that he beat a computer in chess, by unplugging it.", "0:They say he freelances online. I don't know what that means... is it like selling fish, but with pixels?", "0:Why do you ask anyway, fellow recruiter?", "p:Well, I am here to review his portfolio and hopefully meet him in person.", "1:I see... well sometimes you might meet him here, playing badminton with us, or engaging in voluntary works.", "0:Yea, but most of the time he is  in his lab crafting who knows what. ", "1:His lab is on the far right of this village. If you're lucky, you might meet him there.", "1:But be warned, he's set up a few... obstacle courses, shall we say.", "0:Yep, he's a dreamer, that one. Always building little worlds for people to explore."])
+dialogue = Array[String](["0:And that is why I always brew my coffee before brushing my teeth!", "0:Oh! Hello there stranger, who are you?", "p:I'm a recruiter. I'm looking for someone named Lim Wei Jen. Do you know him?", "0:That name does ring a bell.", "1:Yea, that's the guy that invents random stuff every day right?", "0:You're giving him credit by calling it inventions.", "0:I heard he built a whole game world... just to test a single jump button!", "1:Shut up. I once heard that he beat a computer in chess, by unplugging it.", "0:They say he freelances online. I don't know what that means... is it like selling fish, but with pixels?", "0:Why do you ask anyway, fellow recruiter?", "p:Well, I am here to review his portfolio and hopefully meet him in person.", "1:I see... well sometimes you might meet him here, playing badminton with us, or engaging in voluntary works.", "0:Yea, but most of the time he is in his lab crafting who knows what. ", "1:His lab is on the far right of this village. If you're lucky, you might meet him there.", "1:But be warned, he's set up a few... obstacle courses, shall we say.", "0:Yep, he's a dreamer, that one. Always building little worlds for people to explore."])
 multiple_labels = [NodePath("Label"), NodePath("Label2")]
 
 [node name="CollisionShape2D" parent="npc" index="0" unique_id=370298396]
@@ -456,9 +457,10 @@ texture = SubResource("NoiseTexture2D_jojiu")
 
 [node name="next level teleporter" parent="." unique_id=124597164 instance=ExtResource("16_jddgd")]
 position = Vector2(9404, -50)
+mute_volume = -30
 next_level_scene = ExtResource("17_t7dqo")
 
-[node name="CollisionShape2D" parent="next level teleporter" index="0"]
+[node name="CollisionShape2D" parent="next level teleporter" index="0" unique_id=167212095]
 position = Vector2(-4, -36.5)
 shape = SubResource("RectangleShape2D_jddgd")
 
@@ -482,6 +484,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=477668231]
@@ -509,6 +512,11 @@ horizontal_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=803522214]
 stream = ExtResource("18_jojiu")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=314105302]
+stream = ExtResource("19_keibd")
+volume_db = -10.0
 autoplay = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1769252638]
